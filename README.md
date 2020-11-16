@@ -1,6 +1,6 @@
 # About
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT) [![Code size](https://img.shields.io/badge/size-149%20MB-green.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT) [![Code size](https://img.shields.io/badge/size-149%20MB-blue.svg)](#)
 
 Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2)<img src=https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/271/owl_1f989.png width="50px" style="margin-top:-50px">
 
