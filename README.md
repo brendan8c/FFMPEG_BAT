@@ -59,7 +59,8 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 – jpg` — *Make JPG images from MP4 at 10fps.<br>*
 `mp4 – gif` — *Make GIF animation from MP4 video. The resolution size will be the same as the video.<br>*
 `mp4 – gif + size` — *Make GIF animation from MP4 video. It is possible to select the resolution of the GIF file.<br>*
-`mp4 – webm` — *Convert MP4 video to WEBM video.<br>*
+`mp4 – webm` — *Convert MP4 video to WEBM video. With sound.<br>*
+`mp4 – webm no sound` — *Convert MP4 video to WEBM video. Without sound.<br>*
 `mp4 – webp` — *Convert MP4 video to WEBP animation.<br>*
 `mp4 – apng` — *Convert MP4 video to APNG animation. Weighs a lot!<br>*
 `mp4 – mov` — *Convert MP4 video to MOV video.<br>*
@@ -72,6 +73,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `webp – png` — *Convert WEBP to PNG.<br>*
 `png – mp4` — *Make a video from PNG. File names must be in this format: file-000.png file-001.png file-002.png<br>*
 `png – webp` — *Convert PNG to WEBP.<br>*
+`png – webm` — *Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png file-002.png<br>*
 `png – jpg` — *Convert PNG to JPG.<br>*
 `png – gif` — *Convert PNG files to GIF animation. File names must be in this format: file-000.png file-001.png<br>*
 `mov – webp` — *Convert MOV video to WEBP animation.<br>*
