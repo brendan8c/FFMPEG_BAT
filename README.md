@@ -45,7 +45,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `Screenshot avi` — *Allows you to take screenshot in AVI video.<br>*
 `Trim video mp4` — *Allows you to trim video MP4. Cut a piece.<br>*
 `Trim video avi` — *Allows you to trim video AVI. Cut a piece.<br>*
-`Rename files` — *Rename any files by specifying the file name and format. name001.format name002.format name003.format<br>*
+`Rename files` — *Rename any files by specifying the file name and format. name001.format name002.format<br>*
 `rename jpg` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
 `rename png` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
 `jpg – mp4` — *Make a video from JPG. File names must be in this format: file-000.jpg file-001.jpg file-002.jpg<br>*
@@ -73,7 +73,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `webp – png` — *Convert WEBP to PNG.<br>*
 `png – mp4` — *Make a video from PNG. File names must be in this format: file-000.png file-001.png file-002.png<br>*
 `png – webp` — *Convert PNG to WEBP.<br>*
-`png – webm` — *Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png file-002.png<br>*
+`png – webm` — *Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png<br>*
 `png – jpg` — *Convert PNG to JPG.<br>*
 `png – gif` — *Convert PNG files to GIF animation. File names must be in this format: file-000.png file-001.png<br>*
 `mov – webp` — *Convert MOV video to WEBP animation.<br>*
