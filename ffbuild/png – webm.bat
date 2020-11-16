@@ -1,5 +1,5 @@
 color a
-@REM @echo off
+@echo off
 set a="Your_files\file-%%03d.png"
 set b="Result\anim.webm"
 set c=ffmpeg.exe

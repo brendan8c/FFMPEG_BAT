@@ -65,6 +65,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 – apng` — *Convert MP4 video to APNG animation. Weighs a lot!<br>*
 `mp4 – mov` — *Convert MP4 video to MOV video.<br>*
 `mp4 – mkv` — *Convert MP4 video to MKV video.<br>*
+`mp4 – mp3` — *Convert video MP4 to audio MP3.<br>*
 `mp4 speedup X2` — *Speed up MP4 videos by 2x.<br>*
 `gif – mp4` — *Convert GIF animation to MP4 video.<br>*
 `gif – webp` — *Convert GIF animation to WEBP animation.<br>*
