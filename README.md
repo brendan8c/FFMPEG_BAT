@@ -41,7 +41,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `Get info mp4` — *Getting information about a video file.<br>*
 `Color filter` — *mp4 Apply color filter to MP4 video.<br>*
 `Mp3 waveform` — *Generates waveform of MP3 audio track in PNG format.<br>*
-`Watermark on mp4` — *Place watermark on MP4 video. The image should be called watermark.png<br>*
+`Watermark on mp4` — *Place watermark on MP4 video. The image must be in .png format.<br>*
 `Screenshot mp4` — *Allows you to take screenshot in MP4 video.<br>*
 `Screenshot avi` — *Allows you to take screenshot in AVI video.<br>*
 `Trim video mp4` — *Allows you to trim video MP4. Cut a piece.<br>*

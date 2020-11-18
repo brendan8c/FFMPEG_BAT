@@ -38,11 +38,14 @@
 
 
 @echo off
+@setlocal EnableDelayedExpansion
 color a
-set a="Your_files\*.mp4"
-set aa="Your_files\watermark.png"
-set b="Result\%%~na.mp4"
+set a=Your_files\*.mp4
+set aa=Your_files\*.png
+set b="Result\video.mp4"
 set c=ffmpeg
 set f=-filter_complex "overlay=(main_w-w)/2:(main_h-h)/2" -preset ultrafast -codec:a copy
-for %%a in (%a%) do (%c% -y -i "%%a" -i %aa% %f% %b%)
+for %%a in (%a%) do !set vid="%%a"!
+for %%s in (%aa%) do !set aud="%%s"!
+%c% -y -i %vid% -i %aud% %f% %b%
 exit

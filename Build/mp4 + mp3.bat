@@ -34,7 +34,7 @@ set c=ffmpeg
 set f=-filter_complex "[1:0] apad" -shortest
 for %%a in (%a%) do !set vid="%%a"!
 for %%s in (%aa%) do !set aud="%%s"!
-%c% -i %vid% -i %aud% %f% %b%
+%c% -y -i %vid% -i %aud% %f% %b%
 @REM Filter adds audio fade at the very beginning for 1.5 seconds.
 @REM Фильтр добавляет затухание звука в самом начале в течении 1.5 секунд.
 set a="Result\*.mp4"
@@ -56,7 +56,7 @@ cd ..
 @REM Filter adds video fade at the very beginning for 1.5 seconds.
 @REM Фильтр добавляет затухание видео в самом начале в течении 1.5 секунд.
 set a="Result\*.mp4"
-set b="Result\output-3.mp4"
+set b="Result\video.mp4"
 set f=-vf "fade=t=in:st=0:d=1.5" -c:a copy
 for %%a in (%a%) do (%c% -y -i "%%a" %f% %b%)
 cd /d Result
