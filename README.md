@@ -68,7 +68,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 + mp3` — *We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.<br>*
 `mp4 – get info` — *Getting information about a video file.<br>*
 `mp4 – speedup X2` — *Speed up MP4 videos by 2x.<br>*
-`mp4 – watermark.bat` — *Place watermark on MP4 video. The image must be in .png format.<br>*
+`mp4 – watermark` — *Place watermark on MP4 video. The image must be in .png format.<br>*
 `mp4 – video resolution` — *Convert MP4 video to any screen resolution.<br>*
 `gif – mp4` — *Convert GIF animation to MP4 video.<br>*
 `gif – webp` — *Convert GIF animation to WEBP animation.<br>*
