@@ -53,7 +53,7 @@
 @REM for %%a in ("Your_files\*.avi") do ffmpeg -y -to 00:00:08 -i "%%a" -c copy "Result\%%~na.avi"
 @echo off
 color a
-@setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 for /f "tokens=1,2" %%d in ('mshta.exe "%~f0"') do (
     set "start=%%d"
     set "end=%%e"

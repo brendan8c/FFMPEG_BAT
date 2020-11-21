@@ -2,7 +2,7 @@
 
 @echo off
 color a
-@setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 for /f "tokens=1,2" %%d in ('mshta.exe "%~f0"') do (
     set "name=%%d"
     set "format=%%e"

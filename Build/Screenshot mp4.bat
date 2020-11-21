@@ -1,7 +1,7 @@
 <!-- :
 @echo off
 color a
-@setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 for /f "tokens=* delims=" %%p in ('mshta.exe "%~f0"') do (
     set "t=%%p"
 )

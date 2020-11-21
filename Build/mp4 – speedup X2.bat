@@ -7,7 +7,7 @@
 @REM Link URL info —> https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video
 @echo off
 color a
-@setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 for /f "tokens=* delims=" %%p in ('mshta.exe "%~f0"') do (
     set "s=%%p"
 )

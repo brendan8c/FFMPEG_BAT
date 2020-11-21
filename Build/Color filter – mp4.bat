@@ -1,6 +1,6 @@
 <!-- :
 @echo off
-@setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 color a
 for /f "tokens=1,2" %%d in ('mshta.exe "%~f0"') do (
     set "color=%%d"

@@ -22,7 +22,7 @@
 @REM Link URL info —> https://trac.ffmpeg.org/wiki/Encode/MP3
 @echo off
 color a
-@setlocal EnableDelayedExpansion
+setlocal EnableDelayedExpansion
 for /f "tokens=* delims=" %%p in ('mshta.exe "%~f0"') do (
     set "volume=%%p"
 )
