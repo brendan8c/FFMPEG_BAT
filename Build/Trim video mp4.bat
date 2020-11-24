@@ -59,11 +59,10 @@ for /f "tokens=1,2" %%d in ('mshta.exe "%~f0"') do (
     set "start=%%d"
     set "end=%%e"
 )
-echo Your time: %t%
 set a="Your_files\*.mp4"
 set b="Result\%%~na.mp4"
 set c=ffmpeg.exe
-set f=-c copy
+set f=-c copy -copyts 
 for %%a in (%a%) do (%c% -y -ss %start% -i "%%a" -to %end% %f% %b%)
 start "" "Result"
 
@@ -106,8 +105,8 @@ exit /b
     <b><p style="font-size: 22; color: #00ff15; font-family: consolas; text-align: center;">Enter start and end times separated by a space</p></b>
     <b><p style="font-size: 22; color: #00ff15; font-family: consolas; text-align: center;">Введите время начала и конца через пробел</p></b>
     <b><p style="font-size: 22; color: #00ff15; font-family: consolas; text-align: center;">hh:mm:ss.mss – 00:00:00.000 00:00:00.000</p></b>
-    <p style="font-size: 18; color: #00ff15; font-family: consolas, sans-serif; text-align: center;">(colons can be omitted as well as milliseconds)</p>
-    <p style="font-size: 18; color: #00ff15; font-family: consolas, sans-serif; text-align: center;">(двоеточия при вводе можно опустить как и миллисекунды)</p>
+    <p style="font-size: 18; color: #00ff15; font-family: consolas, sans-serif; text-align: center;">(milliseconds when entering can be omitted)</p>
+    <p style="font-size: 18; color: #00ff15; font-family: consolas, sans-serif; text-align: center;">(миллисекунды при вводе можно опустить)</p>
     <div style="text-align: center;">
         <input type='tel' name='code' style="padding-left: 10px; margin-right: 15px; background-color: #dfdfdf; border: 2px solid #3f3f3f; width: 300px; height: 30px; font-size: 25; color: #000000;" onkeypress="return entperPressed(event)" autofocus></input>
         <button style="border: 2px solid #3f3f3f; width: 65px; height: 30px; font-size: 20; color: #000000; background-color: #d4d4d4;" onclick='pipeCode()'>Okey</button>
