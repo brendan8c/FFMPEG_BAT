@@ -86,8 +86,10 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mov – avi` — *Convert MOV video to AVI video.<br>*
 `wav – mp3` — *Convert WAV to MP3.<br>*
 `mp3 – wav` — *Convert MP3 to WAV.<br>*
+`mp3 – ogg` — *Convert MP3 to OGG.<br>*
 `mp3 audio gain` — *Amplifies the sound of an audio file by 1.5 times. 192 kbps frequency output.<br>*
-`mp3 + png – cover` — *Adds album cover (in png format) to mp3 file (s).<br>*
+`mp3 + png = cover` — *Adds album cover (in png format) to mp3 file (s).<br>*
+`mp3 + png = video` — *Convert mp3 to video with static image.<br>*
 `ogg – mp3` — *Convert OGG to MP3.<br>*
 `flac – mp3` — *Convert FLAC to MP3.<br>*
 `mkv – mp4` — *Convert MKV video to MP4 video.<br>*
