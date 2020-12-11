@@ -21,7 +21,36 @@
 @REM set f=-filter_complex "aevalsrc=0:d=0.8 [a_silence]; [0:a:0] [a_silence] acrossfade=d=0.8"
 
 
+@echo off
+setlocal EnableDelayedExpansion
+color a
+if not exist youtube-dl.exe goto nothere
+if not exist ffmpeg.exe goto nothere
+goto start
+:nothere
+echo You either dont have, renamed, or moved the youtube-dl, ffmpeg executable. Please leave it in the same folder as this batch file!
+pause
+exit
+:start
+cls
+echo.
+echo Add a smooth fade?
+echo.
+echo 1) Yes - Warning: long processing.
+echo 2) No - Warning: short processing.
 
+echo.
+choice /c 12
+echo.
+
+if errorlevel 2 goto No
+if errorlevel 1 goto Yes
+
+echo No idea how you even got here
+pause
+goto start
+
+:Yes
 @REM We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.
 @REM Склеиваем видео mp4 и аудио файл mp3. Аудио дорожка заменяется на новую.
 @REM @echo off
@@ -72,4 +101,19 @@ cd ..
 cd /d %temp%
 rd /s /q ffmpeg
 cd /d %~dp0
+exit
+@REM ---------------------------------------------------------------------------------------------*
+:No
+@REM We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.
+@REM Склеиваем видео mp4 и аудио файл mp3. Аудио дорожка заменяется на новую.
+@REM @echo off
+setlocal EnableDelayedExpansion
+color a
+set a=Your_files\*.mp4
+set aa=Your_files\*.mp3
+set b="Result\%%~na.mp4"
+set c=ffmpeg
+set f=-filter_complex "[1:0] apad" -shortest
+for %%s in (%aa%) do !set aud="%%s"!
+for %%a in (%a%) do (%c% -y -i "%%a" -i %aud% %f% %b%)
 exit
