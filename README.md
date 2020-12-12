@@ -68,6 +68,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 – mp3` — *Convert video MP4 to audio MP3.<br>*
 `mp4 + mp3` — *We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.<br>*
 `mp4 + mp3 + jpg` — *You need green chroma key video, any photo and any audio. Delete chroma key. Image is background + music.<br>*
+`mp4 + mp3 + mp4` — *You will need 2 videos. One video with chromakey, second video as background. And sound file.<br>*
 `mp4 + mp4 – glue` — *Merges two videos into one.<br>*
 `mp4 – get info` — *Getting information about a video file.<br>*
 `mp4 – speedup X2` — *Speed up MP4 videos by 2x.<br>*
