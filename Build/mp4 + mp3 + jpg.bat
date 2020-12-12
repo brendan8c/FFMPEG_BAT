@@ -29,7 +29,7 @@ exit
 :start
 cls
 echo.
-echo Add a smooth fade?
+echo Specify transparency. Range: 1.0 - 0.0 Default: 1.0
 echo.
 echo 1) Yes - Warning: long processing.
 echo 2) No - Warning: short processing.
@@ -46,6 +46,14 @@ pause
 goto start
 
 :Yes
+echo --------------------------------------------------------*
+echo.
+echo Specify transparency. Range: 1.0 - 0.0
+echo.
+echo Opaque - 0.0, 0.01, 0.02, 0.03, 0.04,.. 0.09, 1.0 - Transparent.
+echo.
+set /p t="Transparency. eg: 0.05: "
+
 @REM We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.
 @REM Склеиваем видео mp4 и аудио файл mp3. Аудио дорожка заменяется на новую.
 @echo off
@@ -114,7 +122,7 @@ set a=Your_files\*.jpg
 set aa=Result\*.mp4
 set b="Result\%%~na.mp4"
 set c=ffmpeg
-set f=-filter_complex "[1:v]chromakey=0x00FF00:similarity=0.350:blend=0.05[ckout];[0:v][ckout]overlay=(W-w)/1:(H-h)/1[out]" -map [out] -map 1:a -c:a copy
+set f=-filter_complex "[1:v]chromakey=0x00FF00:similarity=0.350:blend=%t%[ckout];[0:v][ckout]overlay=(W-w)/1:(H-h)/1[out]" -map [out] -map 1:a -c:a copy
 for %%s in (%aa%) do !set aud="%%s"!
 for %%a in (%a%) do (%c% -y -i "%%a" -i %aud% %f% %b%)
 cd /d Result
@@ -124,6 +132,14 @@ exit
 
 @REM ----------------------------------------------------------------------------------------------------------------*
 :No
+echo --------------------------------------------------------*
+echo.
+echo Specify transparency. Range: 1.0 - 0.0
+echo.
+echo Opaque - 0.0, 0.01, 0.02, 0.03, 0.04,.. 0.09, 1.0 - Transparent.
+echo.
+set /p t="Transparency. eg: 0.05: "
+
 @REM We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.
 @REM Склеиваем видео mp4 и аудио файл mp3. Аудио дорожка заменяется на новую.
 @REM @echo off
@@ -154,11 +170,10 @@ set a=Your_files\*.jpg
 set aa=Result\temp1.mp4
 set b="Result\Video.mp4"
 set c=ffmpeg
-set f=-filter_complex "[1:v]chromakey=0x00FF00:similarity=0.350:blend=0.05[ckout];[0:v][ckout]overlay=(W-w)/1:(H-h)/1[out]" -map [out] -map 1:a -c:a copy
+set f=-filter_complex "[1:v]chromakey=0x00FF00:similarity=0.350:blend=%t%[ckout];[0:v][ckout]overlay=(W-w)/1:(H-h)/1[out]" -map [out] -map 1:a -c:a copy
 for %%s in (%aa%) do !set aud="%%s"!
 for %%a in (%a%) do (%c% -y -i "%%a" -i %aud% %f% %b%)
 cd /d Result
 del /f /q temp0.mp4
 del /f /q temp1.mp4
-pause
 exit
