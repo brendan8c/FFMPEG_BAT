@@ -38,6 +38,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 # FFMPEG
 ## Available Conversion Modes
 
+`ffmpeg - version` — *Version ffmpeg.exe.<br>*
 `Color filter` — *mp4 Apply color filter to MP4 video.<br>*
 `Mp3 waveform` — *Generates waveform of MP3 audio track in PNG format.<br>*
 `Screenshot mp4` — *Allows you to take screenshot in MP4 video.<br>*
@@ -70,6 +71,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 + mp3 + jpg` — *You need green chroma key video, any photo and any audio. Delete chroma key. Image is background + music.<br>*
 `mp4 + mp3 + mp4` — *You will need 2 videos. One video with chromakey, second video as background. And sound file.<br>*
 `mp4 + mp4 – glue` — *Merges two videos into one.<br>*
+`mp4 – resize` — *Reduce your video size by changing constant speed factor.<br>*
 `mp4 – get info` — *Getting information about a video file.<br>*
 `mp4 – speedup X2` — *Speed up MP4 videos by 2x.<br>*
 `mp4 – watermark` — *Place watermark on MP4 video. The image must be in .png format.<br>*
@@ -92,7 +94,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp3 – wav` — *Convert MP3 to WAV.<br>*
 `mp3 – ogg` — *Convert MP3 to OGG.<br>*
 `mp3 audio gain` — *Amplifies the sound of an audio file by 1.5 times. 192 kbps frequency output.<br>*
-`mp3 + png = cover` — *Adds album cover (in png format) to mp3 file (s).<br>*
+`mp3 + jpg = cover` — *Adds album cover (in png format) to mp3 file (s).<br>*
 `mp3 + png = video` — *Convert mp3 to video with static image.<br>*
 `ogg – mp3` — *Convert OGG to MP3.<br>*
 `flac – mp3` — *Convert FLAC to MP3.<br>*
