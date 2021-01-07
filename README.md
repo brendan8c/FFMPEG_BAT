@@ -45,6 +45,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `Screenshot avi` — *Allows you to take screenshot in AVI video.<br>*
 `Trim video mp4` — *Allows you to trim video MP4. Cut a piece.<br>*
 `Trim video avi` — *Allows you to trim video AVI. Cut a piece.<br>*
+`File get info` — *Get file information.<br>*
 `Rename files` — *Rename any files by specifying the file name and format. name001.format name002.format<br>*
 `rename jpg` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
 `rename png` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
@@ -71,6 +72,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 + mp3 + jpg` — *You need green chroma key video, any photo and any audio. Delete chroma key. Image is background + music.<br>*
 `mp4 + mp3 + mp4` — *You will need 2 videos. One video with chromakey, second video as background. And sound file.<br>*
 `mp4 + mp4 – glue` — *Merges two videos into one.<br>*
+`mp4 for Iphone` — *This would convert a video for iPad/iPhone/iPod.<br>*
 `mp4 – resize` — *Reduce your video size by changing constant speed factor.<br>*
 `mp4 – get info` — *Getting information about a video file.<br>*
 `mp4 – speedup X2` — *Speed up MP4 videos by 2x.<br>*
