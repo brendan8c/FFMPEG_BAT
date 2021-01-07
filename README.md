@@ -49,6 +49,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `Rename files` — *Rename any files by specifying the file name and format. name001.format name002.format<br>*
 `rename jpg` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
 `rename png` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
+`REС – mp3, mp4, mp3+mp4` — *Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.<br>*
 `jpg – mp4` — *Make a video from JPG. File names must be in this format: file-000.jpg file-001.jpg file-002.jpg<br>*
 `jpg – webp` — *Convert JPG to WEBP.<br>*
 `jpg – png` — *Convert JPG to PNG.<br>*
