@@ -1,28 +1,29 @@
-@REM -rtbufsize 100M - buffer for video. Screen recording should be fast and smooth so that there are no drops (gaps) of frames. Therefore, it is better to first write the video to memory (this is faster than to disk), and then ffmpeg will transfer it from memory to disk itself.
-@REM -f gdigrab - this option is required if you are recording a screen in Windows;
-@REM -framerate 30 - frame rate of the resulting video;
-@REM -probesize 10M - the number of frames required by ffmpeg to identify the stream. It seems that with a value of 10M it works fine;
-@REM -draw_mouse 1 - draw the mouse;
-@REM -i desktop - tell ffmpeg to record the entire screen;
-@REM -c: v libx264 - we will compress to MP4 format using the x264 codec;
-@REM -r 30 - the codec will record video at 30 frames per second;
-@REM -preset ultrafast - we tell the codec not to hesitate for a long time and encode the video stream as quickly as possible (this is relevant when recording a screen);
-@REM -tune zerolatency - x264 codec option to speed up encoding;
-@REM -crf 25 - quality of the recorded video (higher value means worse video, lower value means better);
-@REM -pix_fmt yuv420p - color format of the resulting video.
+@REM -f gdigrab – Video Filters
+@REM -rtbufsize 100M — Buffer for video. Screen recording should be fast and smooth to avoid dropping frames. Therefore, it is better to first write the video to memory (this is faster than to disk), and then ffmpeg will transfer it from memory to disk itself.
+@REM thread_queue_size – Set the maximum number of queued packets from the demuxer.
+@REM indexmem – Max memory used for timestamp index (per stream).
+@REM draw_mouse – Draw mouse cursor.
+@REM -i desktop - Tell ffmpeg to record the entire screen.
+@REM -f dshow – Audio filters.
+@REM -c:v libx264 - We will compress to MP4 format using the x264 codec.
+@REM -preset ultrafast - We tell the codec not to hesitate for a long time and encode the video stream as quickly as possible (this is relevant when recording a screen).
+@REM preset – configuration preset.
+@REM framerate – Set the frame rate for the video stream. It defaults to 25.
+@REM -itsoffset 0.3 – Set the input time offset.
 @REM ----------------------------------------------------------------------------------------------------------------*
-@REM -rtbufsize 100M — буфер под видео. Запись с экрана должна идти бысто и гладко, чтобы не было дропов (пропусков) кадров. Поэтому лучше сначала записывать видео в память (так  быстрее чем на диск), а затем ffmpeg сам перенесет из памяти на диск.
-@REM -f gdigrab — опция необходима если вы пишите экран в Windows;
-@REM -framerate 30 — частота кадров результирующего видео;
-@REM -probesize 10M — количество кадров необходимое ffmpeg для идентификации потока. Вроде со значением 10M работает нормально;
-@REM -draw_mouse 1 — рисовать мышку;
-@REM -i desktop — говорим ffmpeg записывать весь экран;
-@REM -c:v libx264 — сжимать будем в формат MP4 кодеком x264;
-@REM -r 30 — кодек запишет видео с частотой 30 кадров в секунду;
-@REM -preset ultrafast — говорим кодеку, чтобы долго не раздумывал и кодировал видеопоток, как можно быстрее (при записи экрана это актуально);
-@REM -tune zerolatency — опция кодека x264 для ускорения кодирования;
-@REM -crf 25 — качество записываемого видео (большее значение — хуже видео, меньшее — лучше);
-@REM -pix_fmt yuv420p — цветорвой формат результирующего видео.
+@REM -f gdigrab – Видео фильтры.
+@REM -rtbufsize 100M — Буфер под видео. Запись с экрана должна идти бысто и гладко, чтобы не было пропусков кадров. Поэтому лучше сначала записывать видео в память (так  быстрее чем на диск), а затем ffmpeg сам перенесет из памяти на диск.
+@REM thread_queue_size – Установить максимальное количество пакетов в очереди из демультиплексора.
+@REM indexmem – максимальная память, используемая для индекса отметки времени (на поток).
+@REM draw_mouse – Нарисовать курсор мыши.
+@REM -i desktop — Говорим ffmpeg записывать весь экран.
+@REM -f dshow – Аудио фильтр.
+@REM -c:v libx264 — Cжимать будем в формат MP4 кодеком x264.
+@REM -preset ultrafast — Говорим кодеку, чтобы долго не раздумывал и кодировал видеопоток, как можно быстрее (при записи экрана это актуально).
+@REM -itsoffset 0.3 – Установите смещение времени ввода.
+@REM framerate – Установите частоту кадров для видеопотока. По умолчанию 25.
+
+
 
 @REM –––> You can stop recording by pressing Ctrl + C or just close the executable file.
 @REM –––> Остановить запись можно нажав Ctrl+C или просто закрыть исполняемый файл.
@@ -62,9 +63,9 @@ exit
 @REM MP4 
 @REM ----------------------------------------------------------------------------------------------------------------*
 :video
-@REM set a=-rtbufsize 100M -f gdigrab -framerate 30 -probesize 10M -draw_mouse 1 -i desktop -c:v libx264 -r 30 -preset ultrafast -tune zerolatency -crf 25 -pix_fmt yuv420p
+set a=-f gdigrab -rtbufsize 1000 -thread_queue_size 9999 -indexmem 9999 -draw_mouse 1 -i desktop -f -c:v libx264 -preset ultrafast -r 30
 
-set a=-rtbufsize 100M -f gdigrab -framerate 30 -offset_x 10 -offset_y 20 -video_size 1900x1054 -show_region 0 -probesize 10M -draw_mouse 1 -i desktop -c:v libx264 -r 30 -preset ultrafast -tune zerolatency -crf 25 -pix_fmt yuv420p
+@REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -rtbufsize 1000 -thread_queue_size 9999 -indexmem 9999 -draw_mouse 1 -i desktop -f -c:v libx264 -preset ultrafast -r 30
 
 set b="Result\video.mp4"
 set c=ffmpeg
@@ -74,10 +75,10 @@ exit
 @REM MP3 + MP4 
 @REM ----------------------------------------------------------------------------------------------------------------*
 :audvid
-set m="Microphone sony (VIA HD Audio)"
-@REM set m="Stereo mixer (VIA HD Audio)"
+@REM set m="Microphone sony (VIA HD Audio)"
+set m="Stereo mixer (VIA HD Audio)"
 
-set a=-rtbufsize 100M -f gdigrab -framerate 30 -probesize 10M -draw_mouse 1 -i desktop -f dshow -i audio=%m% -c:v libx264 -r 30 -preset ultrafast -tune zerolatency -crf 25 -pix_fmt yuv420p
+set a=-f gdigrab -rtbufsize 1000 -thread_queue_size 9999 -indexmem 9999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -c:v libx264 -preset ultrafast -r 30 -b:a 120K
 
 @REM If you want to constrain the area and show the capture area
 @REM Adjust the viewport and switch to 0 this parameter -show_region 1
@@ -86,7 +87,8 @@ set a=-rtbufsize 100M -f gdigrab -framerate 30 -probesize 10M -draw_mouse 1 -i d
 @REM Если вы хотите ограничить область и показать область захвата
 @REM Настройте область просмотра и переключите на 0 этот параметр -show_region 1
 @REM При включенном параметре он зависает! 
-@REM set a=-rtbufsize 100M -f gdigrab -framerate 30 -offset_x 10 -offset_y 20 -video_size 1900x1054 -show_region 0 -probesize 10M -draw_mouse 1 -i desktop -f dshow -i audio=%m% -c:v libx264 -r 30 -preset ultrafast -tune zerolatency -crf 25 -pix_fmt yuv420p
+
+@REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -rtbufsize 1000 -thread_queue_size 9999 -indexmem 9999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -c:v libx264 -preset ultrafast -r 30 -b:a 120K
 
 set b="Result\video.mp4"
 set c=ffmpeg
