@@ -99,7 +99,45 @@ exit
 @REM MP3 + MP4 
 @REM ----------------------------------------------------------------------------------------------------------------*
 :audvid
-@REM set m="Microphone sony (VIA HD Audio)"
+
+echo.
+echo !! Select: Screen sound or Microphone.
+echo.
+echo 1) Screen sound.
+echo 2) Microphone.
+
+echo.
+choice /c 12
+echo.
+
+if errorlevel 2 goto microphone
+if errorlevel 1 goto screensound
+
+@REM ----------------------------------------------------------------------------------------------------------------*
+:microphone
+set m="Microphone sony (VIA HD Audio)"
+
+set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
+
+
+@REM If you want to constrain the area and show the capture area
+@REM Adjust the viewport and switch to 0 this parameter -show_region 1
+@REM When enabled, it freezes!
+@REM ---------------------------------------------------------------------*
+@REM Если вы хотите ограничить область и показать область захвата
+@REM Настройте область просмотра и переключите на 0 этот параметр -show_region 1
+@REM При включенном параметре он зависает! 
+
+@REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -show_region 1 -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
+
+set b="Result\video.mp4"
+set c=ffmpeg
+%c% -y %a% %b%
+pause
+exit
+
+@REM ----------------------------------------------------------------------------------------------------------------*
+:screensound
 set m="Stereo mixer (VIA HD Audio)"
 
 set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
@@ -115,8 +153,7 @@ set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -in
 
 @REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -show_region 1 -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
 
-set b="Result\video.yuv"
-@REM set b="Result\video.mp4"
+set b="Result\video.mp4"
 set c=ffmpeg
 %c% -y %a% %b%
 pause
