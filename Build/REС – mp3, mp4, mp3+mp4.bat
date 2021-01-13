@@ -75,8 +75,33 @@ if errorlevel 1 goto audio
 @REM MP3 
 @REM ----------------------------------------------------------------------------------------------------------------*
 :audio
+echo.
+echo !! Select: Screen sound or Microphone.
+echo.
+echo 1) Screen sound.
+echo 2) Microphone.
+
+echo.
+choice /c 12
+echo.
+
+if errorlevel 2 goto amicrophone
+if errorlevel 1 goto ascreensound
+
+@REM Microphone
+@REM ----------------------------------------------------------------------------------------------------------------*
+:amicrophone
 set m="Microphone sony (VIA HD Audio)"
-@REM set m="Stereo mixer (VIA HD Audio)"
+set a=-f dshow -i audio=%m% -acodec libmp3lame
+set b="Result\audio.mp3"
+set c=ffmpeg
+%c% -y %a% %b%
+exit
+
+@REM Screen sound
+@REM ----------------------------------------------------------------------------------------------------------------*
+:ascreensound
+set m="Stereo mixer (VIA HD Audio)"
 set a=-f dshow -i audio=%m% -acodec libmp3lame
 set b="Result\audio.mp3"
 set c=ffmpeg
@@ -113,6 +138,7 @@ echo.
 if errorlevel 2 goto microphone
 if errorlevel 1 goto screensound
 
+@REM Microphone
 @REM ----------------------------------------------------------------------------------------------------------------*
 :microphone
 set m="Microphone sony (VIA HD Audio)"
@@ -136,6 +162,7 @@ set c=ffmpeg
 pause
 exit
 
+@REM Screen sound
 @REM ----------------------------------------------------------------------------------------------------------------*
 :screensound
 set m="Stereo mixer (VIA HD Audio)"
