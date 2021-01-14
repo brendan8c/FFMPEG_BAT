@@ -6,7 +6,7 @@
 @REM -i desktop - Tell ffmpeg to record the entire screen.
 @REM -f dshow – Audio filters.
 @REM -c:v libx264 - We will compress to MP4 format using the x264 codec.
-@REM -preset ultrafast - We tell the codec not to hesitate for a long time and encode the video stream as quickly as possible (this is relevant when recording a screen).
+@REM -preset ultrafast - We tell the codec not to hesitate for a long time and encode the video stream as quickly as possible (this is relevant when recording a screen). A slower preset will provide better compression (compression is quality per filesize).
 @REM preset – configuration preset.
 @REM framerate – Set the frame rate for the video stream. It defaults to 25.
 @REM -itsoffset 0.3 – Set the input time offset.
@@ -14,6 +14,8 @@
 @REM -copyts – Do not process input timestamps, but keep their values without trying to sanitize them. In particular, do not remove the initial start time offset value.
 @REM libx264 -qp 23 – The amount of compression for each macroblock in the frame. Larger values mean higher quantization, higher compression, and lower quality. QP ranges from 0 to 51 in H.264
 @REM -c:v libx264 -crf 23 – Constant Rate Factor (CRF) is a quality setting (and rate control). values from 0 to 51, where lower values will result in better quality at the expense of higher file sizes. Higher values mean more compression, but at some point you will notice quality degradation. The default is 23.
+@REM -tune zerolatency – To change the settings depending on the specifics of your input. zerolatency - Suitable for fast encoding and low latency streaming.
+@REM -r – FPS frame rate. It takes effect after all filtering, but before encoding the video stream.
 @REM ----------------------------------------------------------------------------------------------------------------*
 @REM -f gdigrab – Видео фильтры.
 @REM -rtbufsize 100M — Буфер под видео. Запись с экрана должна идти бысто и гладко, чтобы не было пропусков кадров. Поэтому лучше сначала записывать видео в память (так  быстрее чем на диск), а затем ffmpeg сам перенесет из памяти на диск.
@@ -23,18 +25,23 @@
 @REM -i desktop — Говорим ffmpeg записывать весь экран.
 @REM -f dshow – Аудио фильтр.
 @REM -c:v libx264 — Cжимать будем в формат MP4 кодеком x264.
-@REM -preset ultrafast — Говорим кодеку, чтобы долго не раздумывал и кодировал видеопоток, как можно быстрее (при записи экрана это актуально).
+@REM -preset ultrafast — Говорим кодеку, чтобы долго не раздумывал и кодировал видеопоток, как можно быстрее (при записи экрана это актуально). Более медленная предустановка обеспечит лучшее сжатие (сжатие - это качество на размер файла).
 @REM -itsoffset 0.3 – Установите смещение времени ввода.
 @REM framerate – Установите частоту кадров для видеопотока. По умолчанию 25.
 @REM -audio_buffer_size – Установите размер буфера аудиоустройства в миллисекундах (что может напрямую влиять на задержку, в зависимости от устройства). По умолчанию 500ms
 @REM -copyts – Не обрабатывать временные метки ввода, но сохраняйте их значения, не пытаясь очистить их. В частности, не удаляйте начальное значение смещения времени начала.
 @REM -c:v libx264 -qp 23 – Количество сжатия для каждого макроблока в кадре. Большие значения означают, что будет более высокое квантование, большее сжатие и более низкое качество. QP варьируется от 0 до 51 в H.264
 @REM -c:v libx264 -crf 23 – Коэффициент постоянной скорости (CRF) - это настройка качества (и управления скоростью). значения от 0 до 51, где более низкие значения приведут к лучшему качеству за счет более высоких размеров файлов. Более высокие значения означают большее сжатие, но в какой-то момент вы заметите ухудшение качества. Значение по умолчанию - 23.
+@REM -tune zerolatency – для изменения настроек в зависимости от особенностей вашего ввода. zerolatency - подходит для быстрого кодирования и потоковой передачи с малой задержкой.
+@REM -r – Частота кадров FPS. Вступает в силу после всей фильтрации, но до того, как будет выполнено кодирование видеопотока.
 
 @REM https://ffmpeg.org/ffmpeg-devices.html#toc-gdigrab
 @REM https://ffmpeg.org/ffmpeg-devices.html#toc-Examples-2
+@REM http://ffmpeg.org/ffmpeg-filters.html#fps
 @REM https://trac.ffmpeg.org/wiki/DirectShow
+@REM https://trac.ffmpeg.org/wiki/Encode/H.264
 @REM https://trac.ffmpeg.org/wiki/Capture/Desktop
+@REM https://trac.ffmpeg.org/wiki/ChangingFrameRate
 @REM https://slhck.info/video/2017/03/01/rate-control.html
 @REM https://slhck.info/video/2017/02/24/crf-guide.html
 

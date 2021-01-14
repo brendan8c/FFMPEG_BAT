@@ -44,7 +44,6 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `Screenshot mp4` — *Allows you to take screenshot in MP4 video.<br>*
 `Screenshot avi` — *Allows you to take screenshot in AVI video.<br>*
 `Trim video mp4` — *Allows you to trim video MP4. Cut a piece.<br>*
-`Trim video avi` — *Allows you to trim video AVI. Cut a piece.<br>*
 `File get info` — *Get file information.<br>*
 `Rename files` — *Rename any files by specifying the file name and format. name001.format name002.format<br>*
 `rename jpg` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
