@@ -34,8 +34,11 @@ exit
 :start
 cls
 echo.
-echo Add a smooth fade?
+@REM Добавить плавный переход?
+echo  Add a smooth fade?
 echo.
+@REM Да - Внимание: долгая обработка.
+@REM Нет - Предупреждение: короткая обработка.
 echo 1) Yes - Warning: long processing.
 echo 2) No - Warning: short processing.
 
