@@ -1,6 +1,6 @@
 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
 
-<table>
+<table align="center">
     <tr>
         <td rowspan="2">
             <a href="https://github.com/FFmpeg/FFmpeg">
