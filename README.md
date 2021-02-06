@@ -67,8 +67,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 
 # FFMPEG
 ## Available Conversion Modes
-<br />
-<br />
+
 <table>
     <tr>
         <td colspan="3" align="center">:us: ENGLISH</td>
@@ -117,8 +116,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 </details>
 
 <details>
-<br />
-<br />
+
     <summary>-------------------------------------------------:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:-------------------------------------------------</summary>
     <br />
 
