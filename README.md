@@ -116,9 +116,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 </details>
 
 <details>
-
 <br />
-
     <summary>-------------------------------------------------:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:-------------------------------------------------</summary>
     <br />
 
