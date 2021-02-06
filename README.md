@@ -70,7 +70,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 
 <table>
     <tr>
-        <td colspan="3" align="center">:us: ENGLISH</td>
+        <td colspan="3" align="center">FFmpeg</td>
     </tr>
     <tr>
         <td>:mag:</td>
@@ -432,7 +432,8 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 <br>
 <details>
     <summary>Note</summary>
-    <br>
+<br>
+
 ## Note
 I left more detailed instructions in some .bat files.<br>
 Any .bat file can be opened in a text editor.<br>
@@ -484,7 +485,7 @@ YouTube-DL WebPage:<br>
 
 <table>
     <tr>
-        <td colspan="3" align="center">:ru: RUSSIAN</td>
+        <td colspan="3" align="center">FFmpeg</td>
     </tr>
     <tr>
         <td>:mag:</td>
@@ -846,7 +847,8 @@ YouTube-DL WebPage:<br>
 <br>
 <details>
     <summary>Note</summary>
-    <br>
+<br>
+
 ## Note
 Я оставил более подробные инструкции в некоторых .bat файлах.<br>
 Любой файл .bat можно открыть в текстовом редакторе.<br>
