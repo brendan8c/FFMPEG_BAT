@@ -1,135 +1,71 @@
+::https://github.com/brendan8c/FFMPEG_BAT
+
+@REM -qscale:a 4 ? Sound quality level.
+@REM -qscale:v 3 ? Video quality level. The range is from 1 to 31, where 1 is the highest quality - largest file size and 31 is the lowest quality - smallest file size.
+@REM  ----------------------------------------------------------------------------------------------------------------*
+@REM -qscale:a 4 ? �஢��� ����⢠ ��㪠.
+@REM -qscale:v 3 ? �஢��� ����⢠ �����. �������� �� 1 �� 31, ��� 1 - ᠬ�� ��᮪�� ����⢮ - ᠬ� ����让 ࠧ��� 䠩��, � 31 - ᠬ�� ������ ����⢮ - ᠬ� �����쪨� ࠧ���.
+
+@REM codec 
+@REM https://trac.ffmpeg.org/wiki/Encode/MPEG-4
+
 @echo off
-setlocal EnableDelayedExpansion
 color a
-if not exist youtube-dl.exe goto nothere
-if not exist ffmpeg.exe goto nothere
-goto start
-:nothere
-echo You either dont have, renamed, or moved the youtube-dl, ffmpeg executable. Please leave it in the same folder as this batch file!
-pause
-exit
-:start
-cls
+@REM This bat file is saved in CP 866 encoding. In VSCode.
+@REM ��� bat 䠩� ��࠭� � ����஢�� CP 866. � VSCode.
+@REM chcp 866 > nul
+@REM chcp 1251 > nul
+@REM chcp 65001 > nul   
+echo --------------------------------------------------------------------------------
 echo.
-echo Your video files with sound or no sound?
+echo                       Choose language (�롥�� ��)
 echo.
-echo 1) With sound
-echo 2) No Sound
-echo 3) One with sound, the other no sound.
-
+echo                               [1] ENG [2] RUS
 echo.
-choice /c 123
+choice /c 12
 echo.
+echo --------------------------------------------------------------------------------
+if %errorlevel% == 2 goto RUS
+if %errorlevel% == 1 goto ENG
 
-if errorlevel 3 goto Other
-if errorlevel 2 goto NoSound
-if errorlevel 1 goto WithSound
+@REM RUS
+echo --------------------------------------------------------------------------------
+:RUS
+set lang=RUS
+echo �ਢ�� %username%
+echo.
+echo  ��� ����� ������ ���� ��२�������� � 1.mp4 2.mp4 3.mp4 � �.�.
+echo.
+echo  ������ �� � ������ 1!
+echo.
+choice /c 1
+echo.
+if errorlevel 1 goto next
 
-echo No idea how you even got here
-pause
-goto start
+@REM ENG
+echo --------------------------------------------------------------------------------
+:ENG
+set lang=ENG
+echo Hello %username%
+echo.
+echo  Your videos must be rename in 1.mp4 2.mp4 3.mp4 etc..
+echo.
+echo  Do it and press 1!
+echo.
+choice /c 1
+echo.
+if errorlevel 1 goto next
 
-:WithSound
-@REM Copies all video files from the Your_files folder to the Result folder and renames them.
-@REM Скопирует из папки Your_files все видео файлы в папку Result и переименует их.
-setlocal EnableDelayedExpansion
+@REM next
+@REM echo --------------------------------------------------------------------------------
+:next
 set a="Your_files\*.mp4"
-set b="Result\*"
-xcopy "%a%" "%b%" /h /k /q /r /c /y
-cd /d Result
-set "count=1000"
-set a="*.mp4"
-for /f "usebackq delims=*" %%f in (`dir /b /o:-d /tc %a%`) do (ren "%%f" vide-!count:~1!.mp4
-set /a count+=1
-)
-cd /d %~dp0
-
-@REM Merges two videos into one.
-@REM Объединяет два видео в одно.
-setlocal EnableDelayedExpansion
-set a=Result\vide-000.mp4
-set aa=Result\vide-001.mp4
-@REM set b="Result\%%~na.mp4"
 set b="Result\video.mp4"
 set c=ffmpeg
-
-@REM Both videos must have an audio track
-@REM В обоих видео должна быть аудио дорожка 
-set f=-filter_complex "[0:v:0] [0:a:0] [1:v:0] [1:a:0] concat=n=2:v=1:a=1 [v] [a]" -map "[v]" -map "[a]"
-
-for %%s in (%aa%) do !set aud="%%s"!
-for %%a in (%a%) do (%c% -y -i "%%a" -i %aud% %f% %b%)
+set f=-c:v mpeg4 -qscale:v 3 -c:a libmp3lame -qscale:a 4
+set tmp="Result\list.tmp"
+for %%f in (%a%) do (@echo file 'file:%cd%\%%f' >> %tmp%)
+%c% -y -f concat -safe 0 -i %tmp% %f% %b%
 cd /d Result
-del /f /q vide-000.mp4
-del /f /q vide-001.mp4
-exit
-
-:NoSound
-@REM Copies all video files from the Your_files folder to the Result folder and renames them.
-@REM Скопирует из папки Your_files все видео файлы в папку Result и переименует их.
-setlocal EnableDelayedExpansion
-set a="Your_files\*.mp4"
-set b="Result\*"
-xcopy "%a%" "%b%" /h /k /q /r /c /y
-cd /d Result
-set "count=1000"
-set a="*.mp4"
-for /f "usebackq delims=*" %%f in (`dir /b /o:-d /tc %a%`) do (ren "%%f" vide-!count:~1!.mp4
-set /a count+=1
-)
-cd /d %~dp0
-
-@REM Merges two videos into one.
-@REM Объединяет два видео в одно.
-setlocal EnableDelayedExpansion
-set a=Result\vide-000.mp4
-set aa=Result\vide-001.mp4
-@REM set b="Result\%%~na.mp4"
-set b="Result\video.mp4"
-set c=ffmpeg
-
-@REM Both videos must not have an audio track.
-@REM Оба видео не должны иметь звуковую дорожку.
-set f=-filter_complex "[0:v:0] [1:v:0] concat=n=2:v=1 [v]" -map "[v]"
-
-for %%s in (%aa%) do !set aud="%%s"!
-for %%a in (%a%) do (%c% -y -i "%%a" -i %aud% %f% %b%)
-cd /d Result
-del /f /q vide-000.mp4
-del /f /q vide-001.mp4
-exit
-
-:Other
-@REM Copies all video files from the Your_files folder to the Result folder and renames them.
-@REM Скопирует из папки Your_files все видео файлы в папку Result и переименует их.
-setlocal EnableDelayedExpansion
-set a="Your_files\*.mp4"
-set b="Result\*"
-xcopy "%a%" "%b%" /h /k /q /r /c /y
-cd /d Result
-set "count=1000"
-set a="*.mp4"
-for /f "usebackq delims=*" %%f in (`dir /b /o:-d /tc %a%`) do (ren "%%f" vide-!count:~1!.mp4
-set /a count+=1
-)
-cd /d %~dp0
-
-@REM Merges two videos into one.
-@REM Объединяет два видео в одно.
-setlocal EnableDelayedExpansion
-set a=Result\vide-000.mp4
-set aa=Result\vide-001.mp4
-@REM set b="Result\%%~na.mp4"
-set b="Result\video.mp4"
-set c=ffmpeg
-
-@REM Both videos must not have an audio track.
-@REM Оба видео не должны иметь звуковую дорожку.
-set f=-filter_complex "[0:v:0] [1:v:0] concat=n=2:v=1 [v]" -map "[v]"
-
-for %%s in (%aa%) do !set aud="%%s"!
-for %%a in (%a%) do (%c% -y -i "%%a" -i %aud% %f% %b%)
-cd /d Result
-del /f /q vide-000.mp4
-del /f /q vide-001.mp4
+del /f /q list.tmp
 exit

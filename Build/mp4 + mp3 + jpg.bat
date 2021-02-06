@@ -29,6 +29,7 @@ exit
 :start
 cls
 echo.
+@REM Укажите прозрачность. Диапазон: 1,0 - 0,0 По умолчанию: 1,0
 echo Specify transparency. Range: 1.0 - 0.0 Default: 1.0
 echo.
 echo 1) Yes - Warning: long processing.

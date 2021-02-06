@@ -6,6 +6,9 @@
 @REM set f=-c:v libvpx -crf 10 -b:v 1M -c:a libvorbis
 @REM set f=-c:v libvpx-vp9 -b:a 128k -b:v 1M -c:a libopus
 
+@REM codec 
+@REM https://trac.ffmpeg.org/wiki/Encode/VP9
+
 @REM Assign start and end times
 @REM Timestamps must be in HH:MM:SS.xxx format. .xxx you can omit this (msec).
 @REM -ss looks for the beginning and -to looks for the end, the exit point.

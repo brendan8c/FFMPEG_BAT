@@ -24,6 +24,9 @@
 @REM Кодек h264, который может отображать как QT, так и WPlayer
 @REM Использовать кодировку MP3 со скоростью 384 Кбит/с для аудио
 
+@REM codec 
+@REM https://trac.ffmpeg.org/wiki/Encode/AV1
+
 @echo off
 color a
 set a="Your_files\*.avi"

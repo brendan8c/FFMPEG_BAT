@@ -1,6 +1,8 @@
 @REM -f gdigrab – Video Filters
-@REM -rtbufsize 100M — Buffer for video. Screen recording should be fast and smooth to avoid dropping frames. Therefore, it is better to first write the video to memory (this is faster than to disk), and then ffmpeg will transfer it from memory to disk itself.
-@REM -thread_queue_size – Set the maximum number of queued packets from the demuxer.
+@REM -rtbufsize 2G - Buffer size 2 gigabytes. You can also specify 2000M megabytes or 2000000K kilobytes.
+@REM By default FFmpeg captures frames from the input, and then does whatever you told it to do, for instance, re-encoding them and saving them to an output file. 
+@REM By default if it receives a video frame "too early" (while the previous frame isn't finished yet), it will discard that frame, so that it can keep up the the real time input. You can adjust this by setting the rtbufsize parameter, though note that if your encoding process can't keep up, eventually you'll still start losing frames just the same (and using it at all can introduce a bit of latency). It may be helpful to still specify some size of buffer, however, otherwise frames may be needlessly dropped possibly.
+@REM -thread_queue_size – This option sets the maximum number of queued packets when reading from the file or device. Setting this value can force ffmpeg to use a separate input thread and read packets as soon as they arrive. Can be applied to each input specified after it.
 @REM indexmem – Max memory used for timestamp index (per stream).
 @REM draw_mouse – Draw mouse cursor.
 @REM -i desktop - Tell ffmpeg to record the entire screen.
@@ -18,8 +20,10 @@
 @REM -r – FPS frame rate. It takes effect after all filtering, but before encoding the video stream.
 @REM ----------------------------------------------------------------------------------------------------------------*
 @REM -f gdigrab – Видео фильтры.
-@REM -rtbufsize 100M — Буфер под видео. Запись с экрана должна идти бысто и гладко, чтобы не было пропусков кадров. Поэтому лучше сначала записывать видео в память (так  быстрее чем на диск), а затем ffmpeg сам перенесет из памяти на диск.
-@REM -thread_queue_size – Установить максимальное количество пакетов в очереди из демультиплексора.
+@REM -rtbufsize 2G – Размер буфера 2 гигабайта. Можно указать также в мегабайтах 2000M или килобайтак 2000000K.
+@REM По умолчанию FFmpeg захватывает кадры из ввода, а затем выполняет все, что вы ему сказали. Например перекодирует их и сохраняет в выходной файл.
+@REM По умолчанию, если он получает видеокадр «слишком рано» (в то время как предыдущий кадр еще не закончен), он отбрасывает этот кадр, чтобы он мог поддерживать ввод в реальном времени. Вы можете отрегулировать это, установив параметр rtbufsize, хотя обратите внимание, что если ваш процесс кодирования не успевает, в конечном итоге вы все равно начнете терять кадры (и его использование вообще может вызвать небольшую задержку). Однако может быть полезно указать некоторый размер буфера, в противном случае кадры могут быть потеряны без необходимости.
+@REM -thread_queue_size – Устанавливает максимальное количество пакетов в очереди при чтении из файла или устройства. Установка этого значения может заставить ffmpeg использовать отдельный входной поток и читать пакеты, как только они приходят. Может применяется для каждого входа, указанного после него.
 @REM indexmem – максимальная память, используемая для индекса отметки времени (на поток).
 @REM draw_mouse – Нарисовать курсор мыши.
 @REM -i desktop — Говорим ffmpeg записывать весь экран.
@@ -38,16 +42,21 @@
 @REM https://ffmpeg.org/ffmpeg-devices.html#toc-gdigrab
 @REM https://ffmpeg.org/ffmpeg-devices.html#toc-Examples-2
 @REM http://ffmpeg.org/ffmpeg-filters.html#fps
-@REM https://trac.ffmpeg.org/wiki/DirectShow
 @REM https://trac.ffmpeg.org/wiki/Encode/H.264
 @REM https://trac.ffmpeg.org/wiki/Capture/Desktop
 @REM https://trac.ffmpeg.org/wiki/ChangingFrameRate
 @REM https://slhck.info/video/2017/03/01/rate-control.html
 @REM https://slhck.info/video/2017/02/24/crf-guide.html
 
+@REM For codec
+@REM https://trac.ffmpeg.org/wiki/Encode/MPEG-4
+
 @REM For streaming
 @REM https://sonnati.wordpress.com/2011/08/30/ffmpeg-%E2%80%93-the-swiss-army-knife-of-internet-streaming-%E2%80%93-part-iv
 @REM https://trac.ffmpeg.org/wiki/StreamingGuide
+@REM https://trac.ffmpeg.org/wiki/DirectShow
+@REM https://question-it.com/questions/371917/kak-umenshit-ispolzovanie-protsessora-ffmpeg
+@REM https://www.linux.org.ru/forum/general/12576191
 
 @REM Video files store the differences of frames from each other; if the picture is static and the differences between frames are minimal, then there is nowhere to take a large size either.
 @REM Record, for example, some dynamic game - and you will have a high bitrate.

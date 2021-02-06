@@ -1,8 +1,10 @@
+<img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
+
 # About
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT) [![Code size](https://img.shields.io/badge/size-157%20MB-blue.svg)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT)
 
-Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2)<img src=https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/271/owl_1f989.png width="50px" style="margin-top:-50px">
+Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2).<img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px">
 
 It is ready scripts for FFmpeg, YouTube-dl.<br>
 
@@ -25,7 +27,7 @@ There are 2 folders: Your_files and Result<br>
 FFMPEG WebPage:<br>
 > https://ffmpeg.org<br>
 > https://github.com/FFmpeg/FFmpeg<br>
-To update, download with this name ffmpeg-N-******-ga423bc9dc2-win64-gpl.zip<br>
+To update, download with this name: ffmpeg-N-******-ga423bc9dc2-win64-gpl.zip<br>
 > https://github.com/BtbN/FFmpeg-Builds/releases<br>
 
 ## YouTube-DL About
@@ -40,6 +42,37 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 # FFMPEG
 ## Available Conversion Modes
 
+
+<table>
+    <tr>
+        <td colspan="3" align="center">:us: ENGLISH</td>
+    </tr>
+    <tr>
+        <td>:octocat:</td>
+        <td>ffmpeg - version</td>
+        <td>Version ffmpeg.exe</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">:ru: RUSSIAN</td>
+    </tr>
+    <tr>
+        <td>:octocat:</td>
+        <td>ffmpeg - version</td>
+        <td>Версия ffmpeg.exe</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
 `ffmpeg - version` — *Version ffmpeg.exe.<br>*
 `Color filter` — *mp4 Apply color filter to MP4 video.<br>*
 `Mp3 waveform` — *Generates waveform of MP3 audio track in PNG format.<br>*
@@ -52,7 +85,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `rename png` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
 `music file – mp3` — *Convert music files to MP3<br>*
 `REС – mp3, mp4, mp3+mp4` — *Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.<br>*
-`jpg – mp4` — *Make a video from JPG. File names must be in this format: file-000.jpg file-001.jpg file-002.jpg<br>*
+`jpg – mp4` — *Make a video from JPG.<br>*
 `jpg – webp` — *Convert JPG to WEBP.<br>*
 `jpg – png` — *Convert JPG to PNG.<br>*
 `jpg – gif` — *Convert JPG files to GIF animation. File names must be in this format: file-000.jpg file-001.jpg<br>*
@@ -74,7 +107,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mp4 + mp3` — *We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.<br>*
 `mp4 + mp3 + jpg` — *You need green chroma key video, any photo and any audio. Delete chroma key. Image is background + music.<br>*
 `mp4 + mp3 + mp4` — *You will need 2 videos. One video with chromakey, second video as background. And sound file.<br>*
-`mp4 + mp4 – glue` — *Merges two videos into one.<br>*
+`mp4 + mp4 – glue` — *Merges video files.<br>*
 `mp4 for Iphone` — *This would convert a video for iPad/iPhone/iPod.<br>*
 `mp4 – resize` — *Reduce your video size by changing constant speed factor.<br>*
 `mp4 – get info` — *Getting information about a video file.<br>*
@@ -86,10 +119,12 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `gif – png` — *Slice GIF animation into PNG images<br>*
 `webp – jpg` — *Convert WEBP to JPG.<br>*
 `webp – png` — *Convert WEBP to PNG.<br>*
-`png – mp4` — *Make a video from PNG. File names must be in this format: file-000.png file-001.png file-002.png<br>*
+`ico – png` — *Convert ICO to PNG 128x128px. Poorly removes transparent background!!!<br>*
+`png – mp4` — *Make a video from PNG.<br>*
 `png – webp` — *Convert PNG to WEBP.<br>*
 `png – webm` — *Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png<br>*
 `png – jpg` — *Convert PNG to JPG.<br>*
+`png – ico` — *Convert PNG to ICO 128x128px.<br>*
 `png – gif` — *Convert PNG files to GIF animation. File names must be in this format: file-000.png file-001.png<br>*
 `mov – webp` — *Convert MOV video to WEBP animation.<br>*
 `mov – webm` — *Convert MOV video to WEBM.<br>*

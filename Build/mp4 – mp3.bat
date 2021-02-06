@@ -21,6 +21,7 @@ color a
 set a="Your_files\*.mp4"
 set b="Result\%%~na.mp3"
 set c=ffmpeg
-set f=-map 0:a -ar 44100 -ac 2 -c:a mp3 -b:a 192K -map_metadata 0
+@REM set f=-map 0:a -ar 44100 -ac 2 -c:a mp3 -b:a 192K -map_metadata 0
+set f=-map 0:a -ar 44100 -c:a libmp3lame -qscale:a 1 -map_metadata 0
 for %%a in (%a%) do (%c% -y -i "%%a" %f% %b%)
 exit
