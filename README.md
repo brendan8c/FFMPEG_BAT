@@ -92,7 +92,6 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         </tr>
     </table>
 </details>
-<br />
 <details>
     <summary>:ru: RUSSIAN</summary>
     <br />
