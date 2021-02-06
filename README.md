@@ -169,8 +169,23 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     </tr>
     <tr>
         <td>:movie_camera:</td>
+        <td>MP4 – AVI</td>
+        <td>Convert MP4 video to AVI video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
         <td>MP4 + MP3</td>
         <td>We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.</td>
+    </tr>
+        <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + PNG = Cover</td>
+        <td>Merge mp4 video and PNG image. We get a video with a static image.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + JPG = Cover</td>
+        <td>Merging mp4 video and JPG image. We get a video with a static image.</td>
     </tr>
     <tr>
         <td>:movie_camera:</td>
@@ -587,10 +602,25 @@ YouTube-DL WebPage:<br>
         <td>MP4 – MP3</td>
         <td>Конвертируйте видео MP4 в аудио MP3.</td>
     </tr>
+        <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – AVI</td>
+        <td>Конвертируйте видео MP4 в видео AVI.</td>
+    </tr>
     <tr>
         <td>:movie_camera:</td>
         <td>MP4 + MP3</td>
         <td>Склеиваем видео mp4 и аудио файл mp3. Звуковая дорожка заменяется на новую.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + PNG = Cover</td>
+        <td>Склеиваем видео mp4 и изображение PNG. Получаем видео со статичным изображением.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + JPG = Cover</td>
+        <td>Склеиваем видео mp4 и изображение JPG. Получаем видео со статичным изображением.</td>
     </tr>
     <tr>
         <td>:movie_camera:</td>

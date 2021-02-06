@@ -11,7 +11,7 @@ set f=-map 0:a -ar 44100 -c:a libmp3lame -qscale:a 1 -map_metadata 0
 for %%a in (%a%) do (%c% -y -i "%%a" %f% %b%)
 
 @REM mp3 + png = Video
-set a=Your_files\*.jpg
+set a=Your_files\*.png
 set x=Result\*.mp3
 set b="Result\%%~na.mp4"
 set c=ffmpeg
