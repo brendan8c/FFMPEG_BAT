@@ -43,95 +43,98 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 ## Available Conversion Modes
 
 
-<table>
-    <tr>
-        <td colspan="3" align="center">:us: ENGLISH</td>
-    </tr>
-    <details>
-    <tr>
-        <td>:mag:</td>
-        <td>FFmpeg – Version</td>
-        <td>Version ffmpeg.exe</td>
-    </tr>
-    <tr>
-        <td>:mag:</td>
-        <td>File get info</td>
-        <td>Get file information.</td>
-    </tr>
-    <tr>
-        <td>:octocat:</td>
-        <td>Rename files</td>
-        <td>Rename any files by specifying the file name and format. name001.format name002.format</td>
-    </tr>
-    <tr>
-        <td>:red_circle:</td>
-        <td>REС – mp3, mp4, mp3+mp4</td>
-        <td>Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.</td>
-    </tr>
-    <tr>
-        <td>:movie_camera:</td>
-        <td>MP4 – Color filter</td>
-        <td>Apply color filter to MP4 video.</td>
-    </tr>
-    <tr>
-        <td>:movie_camera:</td>
-        <td>MP4 – Screenshot</td>
-        <td>Allows you to take screenshot in MP4 video.</td>
-    </tr>
-    <tr>
-        <td>:sound:</td>
-        <td>Music file – MP3</td>
-        <td>Convert music files to MP3.</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    </details>
-    <tr>
-        <td colspan="3" align="center">:ru: RUSSIAN</td>
-    </tr>
-    <tr>
-        <td>:mag:</td>
-        <td>FFmpeg – Version</td>
-        <td>Версия ffmpeg.exe</td>
-    </tr>
-    <tr>
-        <td>:mag:</td>
-        <td>File get info</td>
-        <td>Получить информацию о файле.</td>
-    </tr>
-    <tr>
-        <td>:octocat:</td>
-        <td>Rename files</td>
-        <td>Переименуйте любые файлы, указав имя и формат файла. name001.format name002.format</td>
-    </tr>
-    <tr>
-        <td>:red_circle:</td>
-        <td>REС – mp3, mp4, mp3+mp4</td>
-        <td>Запись видео с экрана mp4 + mp3. Запись звука в формате MP3. Записывайте видео в формате mp4 без звука.</td>
-    </tr>
-    <tr>
-        <td>:movie_camera:</td>
-        <td>MP4 – Color filter</td>
-        <td>Применить цветной фильтр к видео MP4.</td>
-    </tr>
-    <tr>
-        <td>:movie_camera:</td>
-        <td>MP4 – Screenshot</td>
-        <td>Позволяет делать снимки экрана в видео MP4.</td>
-    </tr>
-    <tr>
-        <td>:sound:</td>
-        <td>Music file – MP3</td>
-        <td>Конвертируйте музыкальные файлы в MP3.</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+   <details>
+    <summary>:us: ENGLISH</summary>
+    <br />
+    <table>
+        <tr>
+            <td colspan="3" align="center">:us: ENGLISH</td>
+        </tr>
+        <tr>
+            <td>:mag:</td>
+            <td>FFmpeg – Version</td>
+            <td>Version ffmpeg.exe</td>
+        </tr>
+        <tr>
+            <td>:mag:</td>
+            <td>File get info</td>
+            <td>Get file information.</td>
+        </tr>
+        <tr>
+            <td>:octocat:</td>
+            <td>Rename files</td>
+            <td>Rename any files by specifying the file name and format. name001.format name002.format</td>
+        </tr>
+        <tr>
+            <td>:red_circle:</td>
+            <td>REС – mp3, mp4, mp3+mp4</td>
+            <td>Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.</td>
+        </tr>
+        <tr>
+            <td>:movie_camera:</td>
+            <td>MP4 – Color filter</td>
+            <td>Apply color filter to MP4 video.</td>
+        </tr>
+        <tr>
+            <td>:movie_camera:</td>
+            <td>MP4 – Screenshot</td>
+            <td>Allows you to take screenshot in MP4 video.</td>
+        </tr>
+        <tr>
+            <td>:sound:</td>
+            <td>Music file – MP3</td>
+            <td>Convert music files to MP3.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <table>
+</details>
+<tr>
+    <td colspan="3" align="center">:ru: RUSSIAN</td>
+</tr>
+<tr>
+    <td>:mag:</td>
+    <td>FFmpeg – Version</td>
+    <td>Версия ffmpeg.exe</td>
+</tr>
+<tr>
+    <td>:mag:</td>
+    <td>File get info</td>
+    <td>Получить информацию о файле.</td>
+</tr>
+<tr>
+    <td>:octocat:</td>
+    <td>Rename files</td>
+    <td>Переименуйте любые файлы, указав имя и формат файла. name001.format name002.format</td>
+</tr>
+<tr>
+    <td>:red_circle:</td>
+    <td>REС – mp3, mp4, mp3+mp4</td>
+    <td>Запись видео с экрана mp4 + mp3. Запись звука в формате MP3. Записывайте видео в формате mp4 без звука.</td>
+</tr>
+<tr>
+    <td>:movie_camera:</td>
+    <td>MP4 – Color filter</td>
+    <td>Применить цветной фильтр к видео MP4.</td>
+</tr>
+<tr>
+    <td>:movie_camera:</td>
+    <td>MP4 – Screenshot</td>
+    <td>Позволяет делать снимки экрана в видео MP4.</td>
+</tr>
+<tr>
+    <td>:sound:</td>
+    <td>Music file – MP3</td>
+    <td>Конвертируйте музыкальные файлы в MP3.</td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
 </table>
 
 
