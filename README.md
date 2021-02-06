@@ -1,10 +1,16 @@
 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
 
 # About
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> 
+<div>
+    <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px">
+    <div>
+        [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT)
+    </div>
+</div>
+<!-- [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT)
 
-Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2).<img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px">
+Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2).<img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px"> -->
 
 It is ready scripts for FFmpeg, YouTube-dl.<br>
 
