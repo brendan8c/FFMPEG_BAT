@@ -28,7 +28,7 @@
 </table>
 
 <details>
-    <summary>:us: :us: :us: ENGLISH :us: :us: :us:</summary>
+    <summary>-------------------------------------------------:us: :us: :us: ENGLISH :us: :us: :us:-------------------------------------------------</summary>
     <br />
 
 # About
@@ -116,7 +116,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 </details>
 
 <details>
-    <summary>:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:</summary>
+    <summary>-------------------------------------------------:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:-------------------------------------------------</summary>
     <br />
 
 # About
