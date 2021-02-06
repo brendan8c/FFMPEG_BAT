@@ -30,6 +30,9 @@
 <details>
     <summary>-------------------------------------------------:us: :us: :us: ENGLISH :us: :us: :us:-------------------------------------------------</summary>
     <br />
+<details>
+    <summary>About :mag_right:</summary>
+<br>
 
 # About
 It is ready scripts for FFmpeg, YouTube-dl.<br>
@@ -64,6 +67,8 @@ YouTube-DL WebPage:<br>
 ## PNG format
 I use the png format in my scripts, it keeps the best quality of the cortinka than jpg.<br>
 If you want, you can use .bat files with jpg too, I prepared them as well.<br>
+
+</details>
 
 # FFMPEG
 ## Available Conversion Modes
@@ -431,13 +436,13 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 </table>
 <br>
 <details>
-    <summary>Note</summary>
+    <summary>Note :mag_right:</summary>
 <br>
 
 ## Note
 I left more detailed instructions in some .bat files.<br>
 Any .bat file can be opened in a text editor.<br>
-Some .bats are stored in "chcp 866" encoding!<br>
+Some .bat files are saved in "chcp 866" encoding!<br>
 If there are "hieroglyphs" for the place of the code, change the encoding in your code editor to "chcp 866".<br>
 </details>
 </details>
@@ -445,6 +450,9 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
 <details>
     <summary>-------------------------------------------------:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:-------------------------------------------------</summary>
     <br />
+<details>
+    <summary>About :mag_right:</summary>
+<br>
 
 # About
 Это готовые скрипты для FFmpeg, YouTube-dl.<br>
@@ -479,6 +487,8 @@ YouTube-DL WebPage:<br>
 ## PNG формат
 Я использую в своих скриптах формат png, он сохраняет лучшее качество кортинки, чем jpg.<br>
 При желании можно использовать файлы .bat и jpg, я их также подготовил.<br>
+
+</details>
 
 # FFMPEG
 ## Доступные режимы преобразования
@@ -846,13 +856,13 @@ YouTube-DL WebPage:<br>
 </table>
 <br>
 <details>
-    <summary>Note</summary>
+    <summary>Заметка :mag_right:</summary>
 <br>
 
-## Note
+## Заметка
 Я оставил более подробные инструкции в некоторых .bat файлах.<br>
-Любой файл .bat можно открыть в текстовом редакторе.<br>
-Некоторые .bat сохранены в кодировке "chcp 866"!<br>
+Любой .bat файл можно открыть в текстовом редакторе.<br>
+Некоторые .bat файлы сохранены в кодировке "chcp 866"!<br>
 Если будут "иероглифы" за место кода, смените кодировку у вашего редактора кода на "chcp 866".<br>
 </details>
 </details>
