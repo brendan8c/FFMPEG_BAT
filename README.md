@@ -47,6 +47,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     <tr>
         <td colspan="3" align="center">:us: ENGLISH</td>
     </tr>
+    <details>
     <tr>
         <td>:mag:</td>
         <td>FFmpeg – Version</td>
@@ -55,7 +56,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     <tr>
         <td>:mag:</td>
         <td>File get info</td>
-        <td>Get file information</td>
+        <td>Get file information.</td>
     </tr>
     <tr>
         <td>:octocat:</td>
@@ -70,23 +71,24 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     <tr>
         <td>:movie_camera:</td>
         <td>MP4 – Color filter</td>
-        <td>Apply color filter to MP4 video</td>
+        <td>Apply color filter to MP4 video.</td>
     </tr>
     <tr>
         <td>:movie_camera:</td>
         <td>MP4 – Screenshot</td>
-        <td>Allows you to take screenshot in MP4 video</td>
+        <td>Allows you to take screenshot in MP4 video.</td>
     </tr>
     <tr>
         <td>:sound:</td>
         <td>Music file – MP3</td>
-        <td>Convert music files to MP3</td>
+        <td>Convert music files to MP3.</td>
     </tr>
     <tr>
         <td></td>
         <td></td>
         <td></td>
     </tr>
+    </details>
     <tr>
         <td colspan="3" align="center">:ru: RUSSIAN</td>
     </tr>
@@ -98,7 +100,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     <tr>
         <td>:mag:</td>
         <td>File get info</td>
-        <td>Получить информацию о файле</td>
+        <td>Получить информацию о файле.</td>
     </tr>
     <tr>
         <td>:octocat:</td>
@@ -113,17 +115,17 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     <tr>
         <td>:movie_camera:</td>
         <td>MP4 – Color filter</td>
-        <td>Применить цветной фильтр к видео MP4</td>
+        <td>Применить цветной фильтр к видео MP4.</td>
     </tr>
     <tr>
         <td>:movie_camera:</td>
         <td>MP4 – Screenshot</td>
-        <td>Позволяет делать снимки экрана в видео MP4</td>
+        <td>Позволяет делать снимки экрана в видео MP4.</td>
     </tr>
     <tr>
         <td>:sound:</td>
         <td>Music file – MP3</td>
-        <td>Конвертируйте музыкальные файлы в MP3</td>
+        <td>Конвертируйте музыкальные файлы в MP3.</td>
     </tr>
     <tr>
         <td></td>
