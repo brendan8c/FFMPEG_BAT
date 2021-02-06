@@ -48,9 +48,39 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td colspan="3" align="center">:us: ENGLISH</td>
     </tr>
     <tr>
-        <td>:octocat:</td>
-        <td>ffmpeg - version</td>
+        <td>:mag:</td>
+        <td>FFmpeg – Version</td>
         <td>Version ffmpeg.exe</td>
+    </tr>
+    <tr>
+        <td>:mag:</td>
+        <td>File get info</td>
+        <td>Get file information</td>
+    </tr>
+    <tr>
+        <td>:octocat:</td>
+        <td>Rename files</td>
+        <td>Rename any files by specifying the file name and format. name001.format name002.format</td>
+    </tr>
+    <tr>
+        <td>:red_circle:</td>
+        <td>REС – mp3, mp4, mp3+mp4</td>
+        <td>Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Color filter</td>
+        <td>Apply color filter to MP4 video</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Screenshot</td>
+        <td>Allows you to take screenshot in MP4 video</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>Music file – MP3</td>
+        <td>Convert music files to MP3</td>
     </tr>
     <tr>
         <td></td>
@@ -61,9 +91,39 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td colspan="3" align="center">:ru: RUSSIAN</td>
     </tr>
     <tr>
-        <td>:octocat:</td>
-        <td>ffmpeg - version</td>
+        <td>:mag:</td>
+        <td>FFmpeg – Version</td>
         <td>Версия ffmpeg.exe</td>
+    </tr>
+    <tr>
+        <td>:mag:</td>
+        <td>File get info</td>
+        <td>Получить информацию о файле</td>
+    </tr>
+    <tr>
+        <td>:octocat:</td>
+        <td>Rename files</td>
+        <td>Переименуйте любые файлы, указав имя и формат файла. name001.format name002.format</td>
+    </tr>
+    <tr>
+        <td>:red_circle:</td>
+        <td>REС – mp3, mp4, mp3+mp4</td>
+        <td>Запись видео с экрана mp4 + mp3. Запись звука в формате MP3. Записывайте видео в формате mp4 без звука.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Color filter</td>
+        <td>Применить цветной фильтр к видео MP4</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Screenshot</td>
+        <td>Позволяет делать снимки экрана в видео MP4</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>Music file – MP3</td>
+        <td>Конвертируйте музыкальные файлы в MP3</td>
     </tr>
     <tr>
         <td></td>
@@ -73,26 +133,18 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 </table>
 
 
-`ffmpeg - version` — *Version ffmpeg.exe.<br>*
-`Color filter` — *mp4 Apply color filter to MP4 video.<br>*
-`Mp3 waveform` — *Generates waveform of MP3 audio track in PNG format.<br>*
-`Screenshot mp4` — *Allows you to take screenshot in MP4 video.<br>*
-`Screenshot avi` — *Allows you to take screenshot in AVI video.<br>*
-`Trim video mp4` — *Allows you to trim video MP4. Cut a piece.<br>*
-`File get info` — *Get file information.<br>*
-`Rename files` — *Rename any files by specifying the file name and format. name001.format name002.format<br>*
-`rename jpg` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
-`rename png` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
-`music file – mp3` — *Convert music files to MP3<br>*
-`REС – mp3, mp4, mp3+mp4` — *Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.<br>*
+
+`jpg – Rename` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
 `jpg – mp4` — *Make a video from JPG.<br>*
 `jpg – webp` — *Convert JPG to WEBP.<br>*
 `jpg – png` — *Convert JPG to PNG.<br>*
 `jpg – gif` — *Convert JPG files to GIF animation. File names must be in this format: file-000.jpg file-001.jpg<br>*
 `jpg – change resolution` — *Allows you to select the resolution for the JPG file.<br>*
+`avi – Screenshot` — *Allows you to take screenshot in AVI video.<br>*
 `avi – mp4` — *Convert AVI video to MP4 video.<br>*
 `avi – mov` — *Convert AVI video to MOV video.<br>*
 `avi – mkv` — *Convert AVI video to MKV video.<br>*
+`mp4 – Trim video` — *Allows you to trim video MP4. Cut a piece.<br>*
 `mp4 – png` — *Make PNG images from MP4 at 10fps.<br>*
 `mp4 – jpg` — *Make JPG images from MP4 at 10fps.<br>*
 `mp4 – gif` — *Make GIF animation from MP4 video. The resolution size will be the same as the video.<br>*
@@ -120,6 +172,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `webp – jpg` — *Convert WEBP to JPG.<br>*
 `webp – png` — *Convert WEBP to PNG.<br>*
 `ico – png` — *Convert ICO to PNG 128x128px. Poorly removes transparent background!!!<br>*
+`png – Rename` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
 `png – mp4` — *Make a video from PNG.<br>*
 `png – webp` — *Convert PNG to WEBP.<br>*
 `png – webm` — *Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png<br>*
@@ -131,6 +184,7 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 `mov – mp4` — *Convert MOV video to MP4 video.<br>*
 `mov – avi` — *Convert MOV video to AVI video.<br>*
 `wav – mp3` — *Convert WAV to MP3.<br>*
+`Mp3 waveform` — *Generates waveform of MP3 audio track in PNG format.<br>*
 `mp3 – wav` — *Convert MP3 to WAV.<br>*
 `mp3 – ogg` — *Convert MP3 to OGG.<br>*
 `mp3 audio gain` — *Amplifies the sound of an audio file by 1.5 times. 192 kbps frequency output.<br>*
