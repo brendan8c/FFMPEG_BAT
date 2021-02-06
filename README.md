@@ -30,7 +30,8 @@
 <details>
     <summary>:us: ENGLISH :us:</summary>
     <br />
-    # About
+
+# About
 It is ready scripts for FFmpeg, YouTube-dl.<br>
 
 # Installation
@@ -117,34 +118,30 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 <details>
     <summary>:ru: RUSSIAN :ru:</summary>
     <br />
-</details>
-
 
 # About
-It is ready scripts for FFmpeg, YouTube-dl.<br>
-*Это готовые скрипты для FFmpeg, YouTube-dl.*<br>
+Это готовые скрипты для FFmpeg, YouTube-dl.<br>
 
-# Installation
-Open your console and clone this repository.<br>
-*Откройте консоль и клонируйте этот репозиторий.*<br>
+# Установка
+Откройте консоль и клонируйте этот репозиторий.<br>
 `git clone https://github.com/brendan8c/FFmpeg_bat.git`
 
-# How to use:
-## Ffmpeg<br>
-There are 2 folders: Your_files and Result<br>
-1) Drag and drop your files (file) to Your_files folder<br>
-2) Select the desired .bat file for conversion<br>
-3) Take the finished files from the Result folder<br>
+# Как пользоваться:
+## FFmpeg<br>
+Есть 2 папки: Your_files и Result<br>
+1) Перетащите файлы (файл) в папку Your_files<br>
+2) Выберите желаемый .bat файл для конвертации<br>
+3) Возьмите готовые файлы из папки Result<br>
 
 ## Youtube-dl<br>
-1) Run the .bat file and paste the url link to the video<br>
-2) Take the downloaded file from the Result folder<br>
+1) Запустите .bat файл и вставьте ссылку на видео<br>
+2) Возьмите скачанный файл из папки Result <br>
 
 ## FFMPEG About
 FFMPEG WebPage:<br>
 > https://ffmpeg.org<br>
 > https://github.com/FFmpeg/FFmpeg<br>
-To update, download with this name: ffmpeg-N-******-ga423bc9dc2-win64-gpl.zip<br>
+Чтобы обновить, скачайте с этим именем: ffmpeg-N-******-ga423bc9dc2-win64-gpl.zip<br>
 > https://github.com/BtbN/FFmpeg-Builds/releases<br>
 
 ## YouTube-DL About
@@ -152,68 +149,13 @@ YouTube-DL WebPage:<br>
 > https://yt-dl.org<br>
 > https://github.com/ytdl-org/youtube-dl<br>
 
-## PNG format
-I use the png format in my scripts, it keeps the best quality of the cortinka than jpg.<br>
-If you want, you can use .bat files with jpg too, I prepared them as well.<br>
-*Я использую в своих скриптах формат png, он сохраняет лучшее качество кортинки, чем jpg.*<br>
-*При желании можно использовать файлы .bat и jpg, я их тоже подготовил.*<br>
+## PNG формат
+Я использую в своих скриптах формат png, он сохраняет лучшее качество кортинки, чем jpg.<br>
+При желании можно использовать файлы .bat и jpg, я их тоже подготовил.<br>
 
 # FFMPEG
-## Available Conversion Modes
+## Доступные режимы преобразования
 
-
-<details>
-    <summary>:us: ENGLISH</summary>
-    <br />
-    <table>
-        <tr>
-            <td colspan="3" align="center">:us: ENGLISH</td>
-        </tr>
-        <tr>
-            <td>:mag:</td>
-            <td>FFmpeg – Version</td>
-            <td>Version ffmpeg.exe</td>
-        </tr>
-        <tr>
-            <td>:mag:</td>
-            <td>File get info</td>
-            <td>Get file information.</td>
-        </tr>
-        <tr>
-            <td>:octocat:</td>
-            <td>Rename files</td>
-            <td>Rename any files by specifying the file name and format. name001.format name002.format</td>
-        </tr>
-        <tr>
-            <td>:red_circle:</td>
-            <td>REС – mp3, mp4, mp3+mp4</td>
-            <td>Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.</td>
-        </tr>
-        <tr>
-            <td>:movie_camera:</td>
-            <td>MP4 – Color filter</td>
-            <td>Apply color filter to MP4 video.</td>
-        </tr>
-        <tr>
-            <td>:movie_camera:</td>
-            <td>MP4 – Screenshot</td>
-            <td>Allows you to take screenshot in MP4 video.</td>
-        </tr>
-        <tr>
-            <td>:sound:</td>
-            <td>Music file – MP3</td>
-            <td>Convert music files to MP3.</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</details>
-<details>
-    <summary>:ru: RUSSIAN</summary>
-    <br />
     <table>
         <tr>
             <td colspan="3" align="center">:ru: RUSSIAN</td>
@@ -260,7 +202,6 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         </tr>
     </table>
 </details>
-
 
 
 `jpg – Rename` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
