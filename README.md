@@ -233,6 +233,26 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>Convert MKV video to MP4 video.</td>
     </tr>
     <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – WEBP</td>
+        <td>Convert MOV video to WEBP animation.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – WEBM</td>
+        <td>Convert MOV video to WEBM.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – MP4</td>
+        <td>Convert MOV video to MP4 video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – AVI</td>
+        <td>Convert MOV video to AVI video.</td>
+    </tr>
+    <tr>
         <td>:volcano:</td>
         <td>JPG – Rename</td>
         <td>Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg</td>
@@ -308,14 +328,74 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>Convert FLAC to MP3.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>:sound:</td>
+        <td>WAV – MP3</td>
+        <td>Convert WAV to MP3.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>:volcano:</td>
+        <td>GIF – MP4</td>
+        <td>Convert GIF animation to MP4 video.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>GIF – WEBP</td>
+        <td>Convert GIF animation to WEBP animation.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>GIF – PNG</td>
+        <td>Slice GIF animation into PNG images.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>WEBP – JPG</td>
+        <td>Convert WEBP to JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>WEBP – PNG</td>
+        <td>Convert WEBP to PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>ICO – PNG</td>
+        <td>Convert ICO to PNG 128x128px. Poorly removes transparent background!</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – Rename</td>
+        <td>Rename all png files to one format. file-000.png file-png.jpg file-003.png</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – MP4</td>
+        <td>Make a video from PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – WEBP</td>
+        <td>Convert PNG to WEBP.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – WEBM</td>
+        <td>Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – JPG</td>
+        <td>Convert PNG to JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – ICO</td>
+        <td>Convert PNG to ICO 128x128px.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – GIF</td>
+        <td>Convert PNG files to GIF animation. File names must be in this format: file-000.png file-001.png</td>
     </tr>
     <tr>
         <td></td>
@@ -323,6 +403,42 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td></td>
     </tr>
 </table>
+<br>
+<table>
+    <tr>
+        <td colspan="3" align="center">YouTube-DL</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Classic</td>
+        <td>Downloads videos with maximum quality.</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Advanced</td>
+        <td>The user can select the desired video and audio formats.</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Audio</td>
+        <td>Download only audio .mp3 or whole playlist.</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Update</td>
+        <td>Updates your current youtube-dl.exe if an update is available.</td>
+    </tr>
+</table>
+<br>
+<details>
+    <summary>Note</summary>
+    <br>
+## Note
+I left more detailed instructions in some .bat files.<br>
+Any .bat file can be opened in a text editor.<br>
+Some .bats are stored in "chcp 866" encoding!<br>
+If there are "hieroglyphs" for the place of the code, change the encoding in your code editor to "chcp 866".<br>
+</details>
 </details>
 
 <details>
@@ -531,6 +647,26 @@ YouTube-DL WebPage:<br>
         <td>Конвертируйте видео MKV в видео MP4.</td>
     </tr>
     <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – WEBP</td>
+        <td>Конвертируйте видео MOV в анимацию WEBP.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – WEBM</td>
+        <td>Конвертируйте видео MOV в WEBM.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – MP4</td>
+        <td>Конвертируйте видео MOV в видео MP4.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – AVI</td>
+        <td>Конвертируйте видео MOV в видео AVI.</td>
+    </tr>
+    <tr>
         <td>:volcano:</td>
         <td>JPG – Rename</td>
         <td>Переименуйте все файлы jpg в один формат. file-000.jpg file-001.jpg file-003.jpg</td>
@@ -606,14 +742,74 @@ YouTube-DL WebPage:<br>
         <td>Конвертируйте FLAC в MP3.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>:sound:</td>
+        <td>WAV – MP3</td>
+        <td>Конвертируйте WAV в MP3.</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>:volcano:</td>
+        <td>GIF – MP4</td>
+        <td>Конвертируйте анимацию GIF в видео MP4.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>GIF – WEBP</td>
+        <td>Преобразование анимации GIF в анимацию WEBP.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>GIF – PNG</td>
+        <td>Разделите анимацию GIF на изображения PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>WEBP – JPG</td>
+        <td>Конвертируйте WEBP в JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>WEBP – PNG</td>
+        <td>Конвертируйте WEBP в PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>ICO – PNG</td>
+        <td>Конвертируйте ICO в PNG 128x128px. Плохо выделяет прозрачный фон!</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – Rename</td>
+        <td>Переименуйте все файлы png в один формат. file-000.png file-png.jpg file-003.png</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – MP4</td>
+        <td>Сделайте видео из PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – WEBP</td>
+        <td>Конвертируйте PNG в WEBP.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – WEBM</td>
+        <td>Преобразование файлов PNG в анимацию WEBM. Имена файлов должны быть в следующем формате: file-000.png file-001.png</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – JPG</td>
+        <td>Конвертируйте PNG в JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – ICO</td>
+        <td>Преобразование PNG в ICO 128x128px.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG – GIF</td>
+        <td>Преобразование файлов PNG в анимацию GIF. Имена файлов должны быть в следующем формате: file-000.png file-001.png.</td>
     </tr>
     <tr>
         <td></td>
@@ -621,36 +817,40 @@ YouTube-DL WebPage:<br>
         <td></td>
     </tr>
 </table>
-</details>
-
-
-`gif – mp4` — *Convert GIF animation to MP4 video.<br>*
-`gif – webp` — *Convert GIF animation to WEBP animation.<br>*
-`gif – png` — *Slice GIF animation into PNG images<br>*
-`webp – jpg` — *Convert WEBP to JPG.<br>*
-`webp – png` — *Convert WEBP to PNG.<br>*
-`ico – png` — *Convert ICO to PNG 128x128px. Poorly removes transparent background!!!<br>*
-`png – Rename` — *Rename all png files to one format. file-000.png file-png.jpg file-003.png<br>*
-`png – mp4` — *Make a video from PNG.<br>*
-`png – webp` — *Convert PNG to WEBP.<br>*
-`png – webm` — *Convert PNG files to WEBM animation. File names must be in this format: file-000.png file-001.png<br>*
-`png – jpg` — *Convert PNG to JPG.<br>*
-`png – ico` — *Convert PNG to ICO 128x128px.<br>*
-`png – gif` — *Convert PNG files to GIF animation. File names must be in this format: file-000.png file-001.png<br>*
-`mov – webp` — *Convert MOV video to WEBP animation.<br>*
-`mov – webm` — *Convert MOV video to WEBM.<br>*
-`mov – mp4` — *Convert MOV video to MP4 video.<br>*
-`mov – avi` — *Convert MOV video to AVI video.<br>*
-`wav – mp3` — *Convert WAV to MP3.<br>*
-
-# YouTube-DL
-## Available modes
-
-`Youtube – Classic` — *Downloads videos with maximum quality.*<br>
-`Youtube – Advanced` — *The user can select the desired video and audio formats.*<br>
-`Youtube – Audio` — *Download only audio .mp3 or whole playlist.*<br>
-`Youtube – Update` — *Updates your current youtube-dl.exe if an update is available.*<br>
-
+<br>
+<table>
+    <tr>
+        <td colspan="3" align="center">YouTube-DL</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Classic</td>
+        <td>Скачивает видео в максимальном качестве.</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Advanced</td>
+        <td>Пользователь может выбрать желаемые видео и аудио форматы.</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Audio</td>
+        <td>Скачивайте только аудио в формате .mp3 или весь плейлист.</td>
+    </tr>
+    <tr>
+        <td>:space_invader:</td>
+        <td>Youtube – Update</td>
+        <td>Обновляет текущий файл youtube-dl.exe, если доступно обновление.</td>
+    </tr>
+</table>
+<br>
+<details>
+    <summary>Note</summary>
+    <br>
 ## Note
-I left more detailed instructions in some .bat files.<br>
-Any .bat file can be opened in a text editor.<br>
+Я оставил более подробные инструкции в некоторых .bat файлах.<br>
+Любой файл .bat можно открыть в текстовом редакторе.<br>
+Некоторые .bat сохранены в кодировке "chcp 866"!<br>
+Если будут "иероглифы" за место кода, смените кодировку у вашего редактора кода на "chcp 866".<br>
+</details>
+</details>
