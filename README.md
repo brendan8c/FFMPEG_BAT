@@ -1,16 +1,10 @@
 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
 
 # About
-<div>
-    <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px">
-    <div>
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br>
-    </div>
-    <div>
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT)
-    </div>
-</div>
+<img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px">
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT)
 
 
 <!-- [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> -->
