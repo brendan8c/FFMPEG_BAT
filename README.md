@@ -1,27 +1,27 @@
 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
 
-<table>
+<table frame="void">
     <tr>
         <td rowspan="2">
             <a href="https://github.com/FFmpeg/FFmpeg">
-                <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="90px" style="margin-top:-50px">
+                <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="70px" style="margin-top:-50px">
             </a>
         </td>
         <td colspan="2">
             <a href="https://ko-fi.com/brendan8c">
-                <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" width="300px">
+                <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" width="226px">
             </a>
         </td>
     </tr>
     <tr>
         <td>
             <a href="https://www.paypal.com/paypalme/artemguskov/5usd">
-                <img src="https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/PayPal.svg" width="140px">
+                <img src="https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/PayPal.svg" width="100px">
             </a>
         </td>
         <td>
             <a href="https://img.shields.io/github/license/brendan8c/FFMPEG_BAT">
-                <img src="https://img.shields.io/badge/License-MIT-green.svg" width="140px">
+                <img src="https://img.shields.io/badge/License-MIT-green.svg" width="100px">
             </a>
         </td>
     </tr>
