@@ -103,9 +103,219 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>Allows you to take screenshot in MP4 video.</td>
     </tr>
     <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Trim video</td>
+        <td>Allows you to trim video MP4.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – PNG</td>
+        <td>Make PNG images from MP4 at 10fps.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – JPG</td>
+        <td>Make JPG images from MP4 at 10fps.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – GIF</td>
+        <td>Make GIF animation from MP4 video. The resolution size will be the same as the video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – GIF + Size</td>
+        <td>Make GIF animation from MP4 video. It is possible to select the resolution of the GIF file.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – WEBM</td>
+        <td>Convert MP4 video to WEBM video. With sound.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – WEBM no Sound</td>
+        <td>Convert MP4 video to WEBM video. Without sound.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – WEBP</td>
+        <td>Convert MP4 video to WEBP animation.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – APNG</td>
+        <td>Convert MP4 video to APNG animation. Weighs a lot!</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – MOV</td>
+        <td>Convert MP4 video to MOV video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – MKV</td>
+        <td>Convert MP4 video to MKV video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – MP3</td>
+        <td>Convert video MP4 to audio MP3.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP3</td>
+        <td>We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP3 + JPG</td>
+        <td>You need green chroma key video, any photo and any audio. Delete chroma key. Image is background + music.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP3 + MP4</td>
+        <td>You will need 2 videos. One video with chromakey, second video as background. And sound file.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP4 – Glue</td>
+        <td>Allows you to merge videos.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Resize</td>
+        <td>Reduce your video size by changing constant speed factor.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – SpeedUp X2</td>
+        <td>Speed up MP4 videos by 2x.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Watermark</td>
+        <td>Place watermark on MP4 video. The image must be in .png format.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Video Resolution</td>
+        <td>Convert MP4 video to any screen resolution.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 for Iphone</td>
+        <td>This would convert a video for iPad/iPhone/iPod.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – Screenshot</td>
+        <td>Allows you to take screenshot in AVI video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – MP4</td>
+        <td>Convert AVI video to MP4 video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – MOV</td>
+        <td>Convert AVI video to MOV video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – MKV</td>
+        <td>Convert AVI video to MKV video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MKV – MP4</td>
+        <td>Convert MKV video to MP4 video.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – Rename</td>
+        <td>Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – MP4</td>
+        <td>Make a video from JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – WEBP</td>
+        <td>Convert JPG to WEBP.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – PNG</td>
+        <td>Convert JPG to PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – GIF</td>
+        <td>Convert JPG files to GIF animation. File names must be in this format: file-000.jpg file-001.jpg</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – Change Resolution</td>
+        <td>Allows you to select the screen resolution for the JPG file.</td>
+    </tr>
+    <tr>
         <td>:sound:</td>
         <td>Music file – MP3</td>
         <td>Convert music files to MP3.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 Waveform</td>
+        <td>Generates waveform of MP3 audio track in PNG format.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 – WAV</td>
+        <td>Convert MP3 to WAV.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 – OGG</td>
+        <td>Convert MP3 to OGG.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 Audio Gain</td>
+        <td>Amplifies the sound of an audio file by 1.5 times. 192 kbps frequency output.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 + JPG = Cover</td>
+        <td>Adds album cover to mp3 file(s).</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 + PNG = Video</td>
+        <td>Convert mp3 to video with static image.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>OGG – MP3</td>
+        <td>Convert OGG to MP3.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>FLAC – MP3</td>
+        <td>Convert FLAC to MP3.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td></td>
@@ -191,9 +401,219 @@ YouTube-DL WebPage:<br>
         <td>Позволяет делать снимки экрана в видео MP4.</td>
     </tr>
     <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Trim video</td>
+        <td>Позволяет обрезать видео MP4.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – PNG</td>
+        <td>Создавайте изображения PNG из MP4 со скоростью 10 кадров в секунду.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – JPG</td>
+        <td>Создавайте изображения JPG из MP4 со скоростью 10 кадров в секунду.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – GIF</td>
+        <td>Сделайте GIF-анимацию из видео MP4. Размер разрешения будет таким же, как у видео.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – GIF + Size</td>
+        <td>Сделайте GIF-анимацию из видео MP4. Можно выбрать разрешение файла GIF.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – WEBM</td>
+        <td>Конвертируйте видео MP4 в видео WEBM. Со звуком.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – WEBM no Sound</td>
+        <td>Конвертируйте видео MP4 в видео WEBM. Без звука.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – WEBP</td>
+        <td>Конвертируйте видео MP4 в анимацию WEBP.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – APNG</td>
+        <td>Конвертируйте видео MP4 в анимацию APNG. Много весит!</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – MOV</td>
+        <td>Конвертируйте видео MP4 в видео MOV.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – MKV</td>
+        <td>Конвертируйте видео MP4 в видео MKV.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – MP3</td>
+        <td>Конвертируйте видео MP4 в аудио MP3.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP3</td>
+        <td>Склеиваем видео mp4 и аудио файл mp3. Звуковая дорожка заменяется на новую.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP3 + JPG</td>
+        <td>Вам понадобится видео с зеленым хромакеем, любая фотография и любой звук. Удалит хромакей. Изображение фоновое + музыка.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP3 + MP4</td>
+        <td>Вам понадобится 2 видео. Одно видео с хромакеем, второе видео в качестве фона. И звуковой файл.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 + MP4 – Glue</td>
+        <td>Позволяет склеивать видео.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Resize</td>
+        <td>Уменьшите размер видео, изменив постоянный коэффициент скорости.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – SpeedUp X2</td>
+        <td>Ускорьте видео MP4 в 2 раза.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Watermark</td>
+        <td>Поместите водяной знак на видео MP4. Изображение должно быть в формате .png</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 – Video Resolution</td>
+        <td>Конвертируйте видео MP4 в любое разрешение экрана.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MP4 for Iphone</td>
+        <td>Это преобразует видео для iPad / iPhone / iPod.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – Screenshot</td>
+        <td>Позволяет делать снимки экрана в видео AVI.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – MP4</td>
+        <td>Конвертируйте видео AVI в видео MP4.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – MOV</td>
+        <td>Конвертируйте видео AVI в видео MOV.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>AVI – MKV</td>
+        <td>Конвертируйте видео AVI в видео MKV.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MKV – MP4</td>
+        <td>Конвертируйте видео MKV в видео MP4.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – Rename</td>
+        <td>Переименуйте все файлы jpg в один формат. file-000.jpg file-001.jpg file-003.jpg</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – MP4</td>
+        <td>Сделайте видео из JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – WEBP</td>
+        <td>Конвертировать JPG в WEBP.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – PNG</td>
+        <td>Конвертируйте JPG в PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – GIF</td>
+        <td>Конвертируйте файлы JPG в анимацию GIF. Имена файлов должны быть в следующем формате: file-000.jpg file-001.jpg</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – Change Resolution</td>
+        <td>Позволяет выбрать разрешение экрана для файла JPG.</td>
+    </tr>
+    <tr>
         <td>:sound:</td>
         <td>Music file – MP3</td>
         <td>Конвертируйте музыкальные файлы в MP3.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 Waveform</td>
+        <td>Формирует форму волны звуковой дорожки MP3 в формате PNG.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 – WAV</td>
+        <td>Конвертируйте MP3 в WAV.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 – OGG</td>
+        <td>Конвертируйте MP3 в OGG.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 Audio Gain</td>
+        <td>Усиливает звук аудиофайла в 1,5 раза. Выходная частота 192 кбит/с.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 + JPG = Cover</td>
+        <td>Добавляет обложку альбома в файлы mp3.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 + PNG = Video</td>
+        <td>Преобразуйте mp3 в видео со статическим изображением.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>OGG – MP3</td>
+        <td>Конвертируйте OGG в MP3.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>FLAC – MP3</td>
+        <td>Конвертируйте FLAC в MP3.</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td></td>
@@ -204,38 +624,6 @@ YouTube-DL WebPage:<br>
 </details>
 
 
-`jpg – Rename` — *Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg<br>*
-`jpg – mp4` — *Make a video from JPG.<br>*
-`jpg – webp` — *Convert JPG to WEBP.<br>*
-`jpg – png` — *Convert JPG to PNG.<br>*
-`jpg – gif` — *Convert JPG files to GIF animation. File names must be in this format: file-000.jpg file-001.jpg<br>*
-`jpg – change resolution` — *Allows you to select the resolution for the JPG file.<br>*
-`avi – Screenshot` — *Allows you to take screenshot in AVI video.<br>*
-`avi – mp4` — *Convert AVI video to MP4 video.<br>*
-`avi – mov` — *Convert AVI video to MOV video.<br>*
-`avi – mkv` — *Convert AVI video to MKV video.<br>*
-`mp4 – Trim video` — *Allows you to trim video MP4. Cut a piece.<br>*
-`mp4 – png` — *Make PNG images from MP4 at 10fps.<br>*
-`mp4 – jpg` — *Make JPG images from MP4 at 10fps.<br>*
-`mp4 – gif` — *Make GIF animation from MP4 video. The resolution size will be the same as the video.<br>*
-`mp4 – gif + size` — *Make GIF animation from MP4 video. It is possible to select the resolution of the GIF file.<br>*
-`mp4 – webm` — *Convert MP4 video to WEBM video. With sound.<br>*
-`mp4 – webm no sound` — *Convert MP4 video to WEBM video. Without sound.<br>*
-`mp4 – webp` — *Convert MP4 video to WEBP animation.<br>*
-`mp4 – apng` — *Convert MP4 video to APNG animation. Weighs a lot!<br>*
-`mp4 – mov` — *Convert MP4 video to MOV video.<br>*
-`mp4 – mkv` — *Convert MP4 video to MKV video.<br>*
-`mp4 – mp3` — *Convert video MP4 to audio MP3.<br>*
-`mp4 + mp3` — *We glue the video mp4 and the audio file mp3. The audio track is replaced with a new one.<br>*
-`mp4 + mp3 + jpg` — *You need green chroma key video, any photo and any audio. Delete chroma key. Image is background + music.<br>*
-`mp4 + mp3 + mp4` — *You will need 2 videos. One video with chromakey, second video as background. And sound file.<br>*
-`mp4 + mp4 – glue` — *Merges video files.<br>*
-`mp4 for Iphone` — *This would convert a video for iPad/iPhone/iPod.<br>*
-`mp4 – resize` — *Reduce your video size by changing constant speed factor.<br>*
-`mp4 – get info` — *Getting information about a video file.<br>*
-`mp4 – speedup X2` — *Speed up MP4 videos by 2x.<br>*
-`mp4 – watermark` — *Place watermark on MP4 video. The image must be in .png format.<br>*
-`mp4 – video resolution` — *Convert MP4 video to any screen resolution.<br>*
 `gif – mp4` — *Convert GIF animation to MP4 video.<br>*
 `gif – webp` — *Convert GIF animation to WEBP animation.<br>*
 `gif – png` — *Slice GIF animation into PNG images<br>*
@@ -254,16 +642,6 @@ YouTube-DL WebPage:<br>
 `mov – mp4` — *Convert MOV video to MP4 video.<br>*
 `mov – avi` — *Convert MOV video to AVI video.<br>*
 `wav – mp3` — *Convert WAV to MP3.<br>*
-`Mp3 waveform` — *Generates waveform of MP3 audio track in PNG format.<br>*
-`mp3 – wav` — *Convert MP3 to WAV.<br>*
-`mp3 – ogg` — *Convert MP3 to OGG.<br>*
-`mp3 audio gain` — *Amplifies the sound of an audio file by 1.5 times. 192 kbps frequency output.<br>*
-`mp3 + jpg = cover` — *Adds album cover (in png format) to mp3 file (s).<br>*
-`mp3 + png = video` — *Convert mp3 to video with static image.<br>*
-`ogg – mp3` — *Convert OGG to MP3.<br>*
-`flac – mp3` — *Convert FLAC to MP3.<br>*
-`mkv – mp4` — *Convert MKV video to MP4 video.<br>*
-
 
 # YouTube-DL
 ## Available modes
