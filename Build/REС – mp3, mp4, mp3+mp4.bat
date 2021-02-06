@@ -1,43 +1,43 @@
-@REM -f gdigrab тАУ Video Filters
+@REM -f gdigrab ? Video Filters
 @REM -rtbufsize 2G - Buffer size 2 gigabytes. You can also specify 2000M megabytes or 2000000K kilobytes.
 @REM By default FFmpeg captures frames from the input, and then does whatever you told it to do, for instance, re-encoding them and saving them to an output file. 
 @REM By default if it receives a video frame "too early" (while the previous frame isn't finished yet), it will discard that frame, so that it can keep up the the real time input. You can adjust this by setting the rtbufsize parameter, though note that if your encoding process can't keep up, eventually you'll still start losing frames just the same (and using it at all can introduce a bit of latency). It may be helpful to still specify some size of buffer, however, otherwise frames may be needlessly dropped possibly.
-@REM -thread_queue_size тАУ This option sets the maximum number of queued packets when reading from the file or device. Setting this value can force ffmpeg to use a separate input thread and read packets as soon as they arrive. Can be applied to each input specified after it.
-@REM indexmem тАУ Max memory used for timestamp index (per stream).
-@REM draw_mouse тАУ Draw mouse cursor.
+@REM -thread_queue_size ? This option sets the maximum number of queued packets when reading from the file or device. Setting this value can force ffmpeg to use a separate input thread and read packets as soon as they arrive. Can be applied to each input specified after it.
+@REM indexmem ? Max memory used for timestamp index (per stream).
+@REM draw_mouse ? Draw mouse cursor.
 @REM -i desktop - Tell ffmpeg to record the entire screen.
-@REM -f dshow тАУ Audio filters.
+@REM -f dshow ? Audio filters.
 @REM -c:v libx264 - We will compress to MP4 format using the x264 codec.
 @REM -preset ultrafast - We tell the codec not to hesitate for a long time and encode the video stream as quickly as possible (this is relevant when recording a screen). A slower preset will provide better compression (compression is quality per filesize).
-@REM preset тАУ configuration preset.
-@REM framerate тАУ Set the frame rate for the video stream. It defaults to 25.
-@REM -itsoffset 0.3 тАУ Set the input time offset.
-@REM -audio_buffer_size тАУ Set audio device buffer size in milliseconds (which can directly impact latency, depending on the device). Default 500ms
-@REM -copyts тАУ Do not process input timestamps, but keep their values without trying to sanitize them. In particular, do not remove the initial start time offset value.
-@REM libx264 -qp 23 тАУ The amount of compression for each macroblock in the frame. Larger values mean higher quantization, higher compression, and lower quality. QP ranges from 0 to 51 in H.264
-@REM -c:v libx264 -crf 23 тАУ Constant Rate Factor (CRF) is a quality setting (and rate control). values from 0 to 51, where lower values will result in better quality at the expense of higher file sizes. Higher values mean more compression, but at some point you will notice quality degradation. The default is 23.
-@REM -tune zerolatency тАУ To change the settings depending on the specifics of your input. zerolatency - Suitable for fast encoding and low latency streaming.
-@REM -r тАУ FPS frame rate. It takes effect after all filtering, but before encoding the video stream.
+@REM preset ? configuration preset.
+@REM framerate ? Set the frame rate for the video stream. It defaults to 25.
+@REM -itsoffset 0.3 ? Set the input time offset.
+@REM -audio_buffer_size ? Set audio device buffer size in milliseconds (which can directly impact latency, depending on the device). Default 500ms
+@REM -copyts ? Do not process input timestamps, but keep their values without trying to sanitize them. In particular, do not remove the initial start time offset value.
+@REM libx264 -qp 23 ? The amount of compression for each macroblock in the frame. Larger values mean higher quantization, higher compression, and lower quality. QP ranges from 0 to 51 in H.264
+@REM -c:v libx264 -crf 23 ? Constant Rate Factor (CRF) is a quality setting (and rate control). values from 0 to 51, where lower values will result in better quality at the expense of higher file sizes. Higher values mean more compression, but at some point you will notice quality degradation. The default is 23.
+@REM -tune zerolatency ? To change the settings depending on the specifics of your input. zerolatency - Suitable for fast encoding and low latency streaming.
+@REM -r ? FPS frame rate. It takes effect after all filtering, but before encoding the video stream.
 @REM ----------------------------------------------------------------------------------------------------------------*
-@REM -f gdigrab тАУ ╨Т╨╕╨┤╨╡╨╛ ╤Д╨╕╨╗╤М╤В╤А╤Л.
-@REM -rtbufsize 2G тАУ ╨а╨░╨╖╨╝╨╡╤А ╨▒╤Г╤Д╨╡╤А╨░ 2 ╨│╨╕╨│╨░╨▒╨░╨╣╤В╨░. ╨Ь╨╛╨╢╨╜╨╛ ╤Г╨║╨░╨╖╨░╤В╤М ╤В╨░╨║╨╢╨╡ ╨▓ ╨╝╨╡╨│╨░╨▒╨░╨╣╤В╨░╤Е 2000M ╨╕╨╗╨╕ ╨║╨╕╨╗╨╛╨▒╨░╨╣╤В╨░╨║ 2000000K.
-@REM ╨Я╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О FFmpeg ╨╖╨░╤Е╨▓╨░╤В╤Л╨▓╨░╨╡╤В ╨║╨░╨┤╤А╤Л ╨╕╨╖ ╨▓╨▓╨╛╨┤╨░, ╨░ ╨╖╨░╤В╨╡╨╝ ╨▓╤Л╨┐╨╛╨╗╨╜╤П╨╡╤В ╨▓╤Б╨╡, ╤З╤В╨╛ ╨▓╤Л ╨╡╨╝╤Г ╤Б╨║╨░╨╖╨░╨╗╨╕. ╨Э╨░╨┐╤А╨╕╨╝╨╡╤А ╨┐╨╡╤А╨╡╨║╨╛╨┤╨╕╤А╤Г╨╡╤В ╨╕╤Е ╨╕ ╤Б╨╛╤Е╤А╨░╨╜╤П╨╡╤В ╨▓ ╨▓╤Л╤Е╨╛╨┤╨╜╨╛╨╣ ╤Д╨░╨╣╨╗.
-@REM ╨Я╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О, ╨╡╤Б╨╗╨╕ ╨╛╨╜ ╨┐╨╛╨╗╤Г╤З╨░╨╡╤В ╨▓╨╕╨┤╨╡╨╛╨║╨░╨┤╤А ┬л╤Б╨╗╨╕╤И╨║╨╛╨╝ ╤А╨░╨╜╨╛┬╗ (╨▓ ╤В╨╛ ╨▓╤А╨╡╨╝╤П ╨║╨░╨║ ╨┐╤А╨╡╨┤╤Л╨┤╤Г╤Й╨╕╨╣ ╨║╨░╨┤╤А ╨╡╤Й╨╡ ╨╜╨╡ ╨╖╨░╨║╨╛╨╜╤З╨╡╨╜), ╨╛╨╜ ╨╛╤В╨▒╤А╨░╤Б╤Л╨▓╨░╨╡╤В ╤Н╤В╨╛╤В ╨║╨░╨┤╤А, ╤З╤В╨╛╨▒╤Л ╨╛╨╜ ╨╝╨╛╨│ ╨┐╨╛╨┤╨┤╨╡╤А╨╢╨╕╨▓╨░╤В╤М ╨▓╨▓╨╛╨┤ ╨▓ ╤А╨╡╨░╨╗╤М╨╜╨╛╨╝ ╨▓╤А╨╡╨╝╨╡╨╜╨╕. ╨Т╤Л ╨╝╨╛╨╢╨╡╤В╨╡ ╨╛╤В╤А╨╡╨│╤Г╨╗╨╕╤А╨╛╨▓╨░╤В╤М ╤Н╤В╨╛, ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╨▓ ╨┐╨░╤А╨░╨╝╨╡╤В╤А rtbufsize, ╤Е╨╛╤В╤П ╨╛╨▒╤А╨░╤В╨╕╤В╨╡ ╨▓╨╜╨╕╨╝╨░╨╜╨╕╨╡, ╤З╤В╨╛ ╨╡╤Б╨╗╨╕ ╨▓╨░╤И ╨┐╤А╨╛╤Ж╨╡╤Б╤Б ╨║╨╛╨┤╨╕╤А╨╛╨▓╨░╨╜╨╕╤П ╨╜╨╡ ╤Г╤Б╨┐╨╡╨▓╨░╨╡╤В, ╨▓ ╨║╨╛╨╜╨╡╤З╨╜╨╛╨╝ ╨╕╤В╨╛╨│╨╡ ╨▓╤Л ╨▓╤Б╨╡ ╤А╨░╨▓╨╜╨╛ ╨╜╨░╤З╨╜╨╡╤В╨╡ ╤В╨╡╤А╤П╤В╤М ╨║╨░╨┤╤А╤Л (╨╕ ╨╡╨│╨╛ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╨╜╨╕╨╡ ╨▓╨╛╨╛╨▒╤Й╨╡ ╨╝╨╛╨╢╨╡╤В ╨▓╤Л╨╖╨▓╨░╤В╤М ╨╜╨╡╨▒╨╛╨╗╤М╤И╤Г╤О ╨╖╨░╨┤╨╡╤А╨╢╨║╤Г). ╨Ю╨┤╨╜╨░╨║╨╛ ╨╝╨╛╨╢╨╡╤В ╨▒╤Л╤В╤М ╨┐╨╛╨╗╨╡╨╖╨╜╨╛ ╤Г╨║╨░╨╖╨░╤В╤М ╨╜╨╡╨║╨╛╤В╨╛╤А╤Л╨╣ ╤А╨░╨╖╨╝╨╡╤А ╨▒╤Г╤Д╨╡╤А╨░, ╨▓ ╨┐╤А╨╛╤В╨╕╨▓╨╜╨╛╨╝ ╤Б╨╗╤Г╤З╨░╨╡ ╨║╨░╨┤╤А╤Л ╨╝╨╛╨│╤Г╤В ╨▒╤Л╤В╤М ╨┐╨╛╤В╨╡╤А╤П╨╜╤Л ╨▒╨╡╨╖ ╨╜╨╡╨╛╨▒╤Е╨╛╨┤╨╕╨╝╨╛╤Б╤В╨╕.
-@REM -thread_queue_size тАУ ╨г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╨╝╨░╨║╤Б╨╕╨╝╨░╨╗╤М╨╜╨╛╨╡ ╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨┐╨░╨║╨╡╤В╨╛╨▓ ╨▓ ╨╛╤З╨╡╤А╨╡╨┤╨╕ ╨┐╤А╨╕ ╤З╤В╨╡╨╜╨╕╨╕ ╨╕╨╖ ╤Д╨░╨╣╨╗╨░ ╨╕╨╗╨╕ ╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨░. ╨г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ ╤Н╤В╨╛╨│╨╛ ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╨╝╨╛╨╢╨╡╤В ╨╖╨░╤Б╤В╨░╨▓╨╕╤В╤М ffmpeg ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨╛╤В╨┤╨╡╨╗╤М╨╜╤Л╨╣ ╨▓╤Е╨╛╨┤╨╜╨╛╨╣ ╨┐╨╛╤В╨╛╨║ ╨╕ ╤З╨╕╤В╨░╤В╤М ╨┐╨░╨║╨╡╤В╤Л, ╨║╨░╨║ ╤В╨╛╨╗╤М╨║╨╛ ╨╛╨╜╨╕ ╨┐╤А╨╕╤Е╨╛╨┤╤П╤В. ╨Ь╨╛╨╢╨╡╤В ╨┐╤А╨╕╨╝╨╡╨╜╤П╨╡╤В╤Б╤П ╨┤╨╗╤П ╨║╨░╨╢╨┤╨╛╨│╨╛ ╨▓╤Е╨╛╨┤╨░, ╤Г╨║╨░╨╖╨░╨╜╨╜╨╛╨│╨╛ ╨┐╨╛╤Б╨╗╨╡ ╨╜╨╡╨│╨╛.
-@REM indexmem тАУ ╨╝╨░╨║╤Б╨╕╨╝╨░╨╗╤М╨╜╨░╤П ╨┐╨░╨╝╤П╤В╤М, ╨╕╤Б╨┐╨╛╨╗╤М╨╖╤Г╨╡╨╝╨░╤П ╨┤╨╗╤П ╨╕╨╜╨┤╨╡╨║╤Б╨░ ╨╛╤В╨╝╨╡╤В╨║╨╕ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ (╨╜╨░ ╨┐╨╛╤В╨╛╨║).
-@REM draw_mouse тАУ ╨Э╨░╤А╨╕╤Б╨╛╨▓╨░╤В╤М ╨║╤Г╤А╤Б╨╛╤А ╨╝╤Л╤И╨╕.
-@REM -i desktop тАФ ╨У╨╛╨▓╨╛╤А╨╕╨╝ ffmpeg ╨╖╨░╨┐╨╕╤Б╤Л╨▓╨░╤В╤М ╨▓╨╡╤Б╤М ╤Н╨║╤А╨░╨╜.
-@REM -f dshow тАУ ╨Р╤Г╨┤╨╕╨╛ ╤Д╨╕╨╗╤М╤В╤А.
-@REM -c:v libx264 тАФ C╨╢╨╕╨╝╨░╤В╤М ╨▒╤Г╨┤╨╡╨╝ ╨▓ ╤Д╨╛╤А╨╝╨░╤В MP4 ╨║╨╛╨┤╨╡╨║╨╛╨╝ x264.
-@REM -preset ultrafast тАФ ╨У╨╛╨▓╨╛╤А╨╕╨╝ ╨║╨╛╨┤╨╡╨║╤Г, ╤З╤В╨╛╨▒╤Л ╨┤╨╛╨╗╨│╨╛ ╨╜╨╡ ╤А╨░╨╖╨┤╤Г╨╝╤Л╨▓╨░╨╗ ╨╕ ╨║╨╛╨┤╨╕╤А╨╛╨▓╨░╨╗ ╨▓╨╕╨┤╨╡╨╛╨┐╨╛╤В╨╛╨║, ╨║╨░╨║ ╨╝╨╛╨╢╨╜╨╛ ╨▒╤Л╤Б╤В╤А╨╡╨╡ (╨┐╤А╨╕ ╨╖╨░╨┐╨╕╤Б╨╕ ╤Н╨║╤А╨░╨╜╨░ ╤Н╤В╨╛ ╨░╨║╤В╤Г╨░╨╗╤М╨╜╨╛). ╨С╨╛╨╗╨╡╨╡ ╨╝╨╡╨┤╨╗╨╡╨╜╨╜╨░╤П ╨┐╤А╨╡╨┤╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ ╨╛╨▒╨╡╤Б╨┐╨╡╤З╨╕╤В ╨╗╤Г╤З╤И╨╡╨╡ ╤Б╨╢╨░╤В╨╕╨╡ (╤Б╨╢╨░╤В╨╕╨╡ - ╤Н╤В╨╛ ╨║╨░╤З╨╡╤Б╤В╨▓╨╛ ╨╜╨░ ╤А╨░╨╖╨╝╨╡╤А ╤Д╨░╨╣╨╗╨░).
-@REM -itsoffset 0.3 тАУ ╨г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╨╡ ╤Б╨╝╨╡╤Й╨╡╨╜╨╕╨╡ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ ╨▓╨▓╨╛╨┤╨░.
-@REM framerate тАУ ╨г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╨╡ ╤З╨░╤Б╤В╨╛╤В╤Г ╨║╨░╨┤╤А╨╛╨▓ ╨┤╨╗╤П ╨▓╨╕╨┤╨╡╨╛╨┐╨╛╤В╨╛╨║╨░. ╨Я╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О 25.
-@REM -audio_buffer_size тАУ ╨г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╨╡ ╤А╨░╨╖╨╝╨╡╤А ╨▒╤Г╤Д╨╡╤А╨░ ╨░╤Г╨┤╨╕╨╛╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨░ ╨▓ ╨╝╨╕╨╗╨╗╨╕╤Б╨╡╨║╤Г╨╜╨┤╨░╤Е (╤З╤В╨╛ ╨╝╨╛╨╢╨╡╤В ╨╜╨░╨┐╤А╤П╨╝╤Г╤О ╨▓╨╗╨╕╤П╤В╤М ╨╜╨░ ╨╖╨░╨┤╨╡╤А╨╢╨║╤Г, ╨▓ ╨╖╨░╨▓╨╕╤Б╨╕╨╝╨╛╤Б╤В╨╕ ╨╛╤В ╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨░). ╨Я╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О 500ms
-@REM -copyts тАУ ╨Э╨╡ ╨╛╨▒╤А╨░╨▒╨░╤В╤Л╨▓╨░╤В╤М ╨▓╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╝╨╡╤В╨║╨╕ ╨▓╨▓╨╛╨┤╨░, ╨╜╨╛ ╤Б╨╛╤Е╤А╨░╨╜╤П╨╣╤В╨╡ ╨╕╤Е ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П, ╨╜╨╡ ╨┐╤Л╤В╨░╤П╤Б╤М ╨╛╤З╨╕╤Б╤В╨╕╤В╤М ╨╕╤Е. ╨Т ╤З╨░╤Б╤В╨╜╨╛╤Б╤В╨╕, ╨╜╨╡ ╤Г╨┤╨░╨╗╤П╨╣╤В╨╡ ╨╜╨░╤З╨░╨╗╤М╨╜╨╛╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╨╡ ╤Б╨╝╨╡╤Й╨╡╨╜╨╕╤П ╨▓╤А╨╡╨╝╨╡╨╜╨╕ ╨╜╨░╤З╨░╨╗╨░.
-@REM -c:v libx264 -qp 23 тАУ ╨Ъ╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╤Б╨╢╨░╤В╨╕╤П ╨┤╨╗╤П ╨║╨░╨╢╨┤╨╛╨│╨╛ ╨╝╨░╨║╤А╨╛╨▒╨╗╨╛╨║╨░ ╨▓ ╨║╨░╨┤╤А╨╡. ╨С╨╛╨╗╤М╤И╨╕╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╨╛╨╖╨╜╨░╤З╨░╤О╤В, ╤З╤В╨╛ ╨▒╤Г╨┤╨╡╤В ╨▒╨╛╨╗╨╡╨╡ ╨▓╤Л╤Б╨╛╨║╨╛╨╡ ╨║╨▓╨░╨╜╤В╨╛╨▓╨░╨╜╨╕╨╡, ╨▒╨╛╨╗╤М╤И╨╡╨╡ ╤Б╨╢╨░╤В╨╕╨╡ ╨╕ ╨▒╨╛╨╗╨╡╨╡ ╨╜╨╕╨╖╨║╨╛╨╡ ╨║╨░╤З╨╡╤Б╤В╨▓╨╛. QP ╨▓╨░╤А╤М╨╕╤А╤Г╨╡╤В╤Б╤П ╨╛╤В 0 ╨┤╨╛ 51 ╨▓ H.264
-@REM -c:v libx264 -crf 23 тАУ ╨Ъ╨╛╤Н╤Д╤Д╨╕╤Ж╨╕╨╡╨╜╤В ╨┐╨╛╤Б╤В╨╛╤П╨╜╨╜╨╛╨╣ ╤Б╨║╨╛╤А╨╛╤Б╤В╨╕ (CRF) - ╤Н╤В╨╛ ╨╜╨░╤Б╤В╤А╨╛╨╣╨║╨░ ╨║╨░╤З╨╡╤Б╤В╨▓╨░ (╨╕ ╤Г╨┐╤А╨░╨▓╨╗╨╡╨╜╨╕╤П ╤Б╨║╨╛╤А╨╛╤Б╤В╤М╤О). ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╨╛╤В 0 ╨┤╨╛ 51, ╨│╨┤╨╡ ╨▒╨╛╨╗╨╡╨╡ ╨╜╨╕╨╖╨║╨╕╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╨┐╤А╨╕╨▓╨╡╨┤╤Г╤В ╨║ ╨╗╤Г╤З╤И╨╡╨╝╤Г ╨║╨░╤З╨╡╤Б╤В╨▓╤Г ╨╖╨░ ╤Б╤З╨╡╤В ╨▒╨╛╨╗╨╡╨╡ ╨▓╤Л╤Б╨╛╨║╨╕╤Е ╤А╨░╨╖╨╝╨╡╤А╨╛╨▓ ╤Д╨░╨╣╨╗╨╛╨▓. ╨С╨╛╨╗╨╡╨╡ ╨▓╤Л╤Б╨╛╨║╨╕╨╡ ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╨╛╨╖╨╜╨░╤З╨░╤О╤В ╨▒╨╛╨╗╤М╤И╨╡╨╡ ╤Б╨╢╨░╤В╨╕╨╡, ╨╜╨╛ ╨▓ ╨║╨░╨║╨╛╨╣-╤В╨╛ ╨╝╨╛╨╝╨╡╨╜╤В ╨▓╤Л ╨╖╨░╨╝╨╡╤В╨╕╤В╨╡ ╤Г╤Е╤Г╨┤╤И╨╡╨╜╨╕╨╡ ╨║╨░╤З╨╡╤Б╤В╨▓╨░. ╨Ч╨╜╨░╤З╨╡╨╜╨╕╨╡ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О - 23.
-@REM -tune zerolatency тАУ ╨┤╨╗╤П ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤П ╨╜╨░╤Б╤В╤А╨╛╨╡╨║ ╨▓ ╨╖╨░╨▓╨╕╤Б╨╕╨╝╨╛╤Б╤В╨╕ ╨╛╤В ╨╛╤Б╨╛╨▒╨╡╨╜╨╜╨╛╤Б╤В╨╡╨╣ ╨▓╨░╤И╨╡╨│╨╛ ╨▓╨▓╨╛╨┤╨░. zerolatency - ╨┐╨╛╨┤╤Е╨╛╨┤╨╕╤В ╨┤╨╗╤П ╨▒╤Л╤Б╤В╤А╨╛╨│╨╛ ╨║╨╛╨┤╨╕╤А╨╛╨▓╨░╨╜╨╕╤П ╨╕ ╨┐╨╛╤В╨╛╨║╨╛╨▓╨╛╨╣ ╨┐╨╡╤А╨╡╨┤╨░╤З╨╕ ╤Б ╨╝╨░╨╗╨╛╨╣ ╨╖╨░╨┤╨╡╤А╨╢╨║╨╛╨╣.
-@REM -r тАУ ╨з╨░╤Б╤В╨╛╤В╨░ ╨║╨░╨┤╤А╨╛╨▓ FPS. ╨Т╤Б╤В╤Г╨┐╨░╨╡╤В ╨▓ ╤Б╨╕╨╗╤Г ╨┐╨╛╤Б╨╗╨╡ ╨▓╤Б╨╡╨╣ ╤Д╨╕╨╗╤М╤В╤А╨░╤Ж╨╕╨╕, ╨╜╨╛ ╨┤╨╛ ╤В╨╛╨│╨╛, ╨║╨░╨║ ╨▒╤Г╨┤╨╡╤В ╨▓╤Л╨┐╨╛╨╗╨╜╨╡╨╜╨╛ ╨║╨╛╨┤╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨▓╨╕╨┤╨╡╨╛╨┐╨╛╤В╨╛╨║╨░.
+@REM -f gdigrab ? Видео фильтры.
+@REM -rtbufsize 2G ? Размер буфера 2 гигабайта. Можно указать также в мегабайтах 2000M или килобайтак 2000000K.
+@REM По умолчанию FFmpeg захватывает кадры из ввода, а затем выполняет все, что вы ему сказали. Например перекодирует их и сохраняет в выходной файл.
+@REM По умолчанию, если он получает видеокадр ?слишком рано? (в то время как предыдущий кадр еще не закончен), он отбрасывает этот кадр, чтобы он мог поддерживать ввод в реальном времени. Вы можете отрегулировать это, установив параметр rtbufsize, хотя обратите внимание, что если ваш процесс кодирования не успевает, в конечном итоге вы все равно начнете терять кадры (и его использование вообще может вызвать небольшую задержку). Однако может быть полезно указать некоторый размер буфера, в противном случае кадры могут быть потеряны без необходимости.
+@REM -thread_queue_size ? Устанавливает максимальное количество пакетов в очереди при чтении из файла или устройства. Установка этого значения может заставить ffmpeg использовать отдельный входной поток и читать пакеты, как только они приходят. Может применяется для каждого входа, указанного после него.
+@REM indexmem ? максимальная память, используемая для индекса отметки времени (на поток).
+@REM draw_mouse ? Нарисовать курсор мыши.
+@REM -i desktop ? Говорим ffmpeg записывать весь экран.
+@REM -f dshow ? Аудио фильтр.
+@REM -c:v libx264 ? Cжимать будем в формат MP4 кодеком x264.
+@REM -preset ultrafast ? Говорим кодеку, чтобы долго не раздумывал и кодировал видеопоток, как можно быстрее (при записи экрана это актуально). Более медленная предустановка обеспечит лучшее сжатие (сжатие - это качество на размер файла).
+@REM -itsoffset 0.3 ? Установите смещение времени ввода.
+@REM framerate ? Установите частоту кадров для видеопотока. По умолчанию 25.
+@REM -audio_buffer_size ? Установите размер буфера аудиоустройства в миллисекундах (что может напрямую влиять на задержку, в зависимости от устройства). По умолчанию 500ms
+@REM -copyts ? Не обрабатывать временные метки ввода, но сохраняйте их значения, не пытаясь очистить их. В частности, не удаляйте начальное значение смещения времени начала.
+@REM -c:v libx264 -qp 23 ? Количество сжатия для каждого макроблока в кадре. Большие значения означают, что будет более высокое квантование, большее сжатие и более низкое качество. QP варьируется от 0 до 51 в H.264
+@REM -c:v libx264 -crf 23 ? Коэффициент постоянной скорости (CRF) - это настройка качества (и управления скоростью). значения от 0 до 51, где более низкие значения приведут к лучшему качеству за счет более высоких размеров файлов. Более высокие значения означают большее сжатие, но в какой-то момент вы заметите ухудшение качества. Значение по умолчанию - 23.
+@REM -tune zerolatency ? для изменения настроек в зависимости от особенностей вашего ввода. zerolatency - подходит для быстрого кодирования и потоковой передачи с малой задержкой.
+@REM -r ? Частота кадров FPS. Вступает в силу после всей фильтрации, но до того, как будет выполнено кодирование видеопотока.
 
 @REM https://ffmpeg.org/ffmpeg-devices.html#toc-gdigrab
 @REM https://ffmpeg.org/ffmpeg-devices.html#toc-Examples-2
@@ -60,12 +60,12 @@
 
 @REM Video files store the differences of frames from each other; if the picture is static and the differences between frames are minimal, then there is nowhere to take a large size either.
 @REM Record, for example, some dynamic game - and you will have a high bitrate.
-@REM  ╨Т╨╕╨┤╨╡╨╛╤Д╨░╨╣╨╗╤Л ╤Е╤А╨░╨╜╤П╤В ╨▓ ╤Б╨╡╨▒╨╡ ╨╛╤В╨╗╨╕╤З╨╕╤П ╨║╨░╨┤╤А╨╛╨▓ ╨┤╤А╤Г╨│ ╨╛╤В ╨┤╤А╤Г╨│╨░; ╨╡╤Б╨╗╨╕ ╨║╨░╤А╤В╨╕╨╜╨║╨░ ╤Б╤В╨░╤В╨╕╤З╨╜╨░╤П ╨╕ ╨╛╤В╨╗╨╕╤З╨╕╤П ╨╝╨╡╨╢╨┤╤Г ╨║╨░╨┤╤А╤Л ╨╝╨╕╨╜╨╕╨╝╨░╨╗╤М╨╜╤Л, ╤В╨╛ ╨╕ ╨▒╨╛╨╗╤М╤И╨╛╨╝╤Г ╤А╨░╨╖╨╝╨╡╤А╤Г ╨▓╨╖╤П╤В╤М╤Б╤П ╤В╨╛╨╢╨╡ ╨╜╨╡╨╛╤В╨║╤Г╨┤╨░. 
-@REM  ╨Ч╨░╨┐╨╕╤И╨╕╤В╨╡ ╨╜╨░╨┐╤А╨╕╨╝╨╡╤А ╨║╨░╨║╤Г╤О-╨╜╨╕╨▒╤Г╨┤╤М ╨┤╨╕╨╜╨░╨╝╨╕╤З╨╜╤Г╤О ╨╕╨│╤А╤Г тАФ ╨╕ ╨▒╤Г╨┤╨╡╤В ╨▓╨░╨╝ ╨▓╤Л╤Б╨╛╨║╨╕╨╣ ╨▒╨╕╤В╤А╨╡╨╣╤В.
+@REM  Видеофайлы хранят в себе отличия кадров друг от друга; если картинка статичная и отличия между кадры минимальны, то и большому размеру взяться тоже неоткуда. 
+@REM  Запишите например какую-нибудь динамичную игру ? и будет вам высокий битрейт.
 
 
-@REM тАУтАУтАУ> You can stop recording by pressing Q or Ctrl + C or just close the executable file.
-@REM тАУтАУтАУ> ╨Ю╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М ╨╖╨░╨┐╨╕╤Б╤М ╨╝╨╛╨╢╨╜╨╛ ╨╜╨░╨╢╨░╨▓ Q ╨╕╨╗╨╕ Ctrl+C ╨╕╨╗╨╕ ╨┐╤А╨╛╤Б╤В╨╛ ╨╖╨░╨║╤А╤Л╤В╤М ╨╕╤Б╨┐╨╛╨╗╨╜╤П╨╡╨╝╤Л╨╣ ╤Д╨░╨╣╨╗.
+@REM ???> You can stop recording by pressing Q or Ctrl + C or just close the executable file.
+@REM ???> Остановить запись можно нажав Q или Ctrl+C или просто закрыть исполняемый файл.
 
 @echo off
 color a
@@ -127,7 +127,13 @@ exit
 @REM MP4 
 @REM ----------------------------------------------------------------------------------------------------------------*
 :video
-set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -c:v libx264 -pix_fmt yuv420p -b:v 50000K -r 25 -crf 23 -preset ultrafast -tune zerolatency
+@REM This video recording codec is a bit heavier. 
+@REM Этот кодек для записи видео немного тяжелее.
+@REM set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -c:v libx264 -pix_fmt yuv420p -b:v 50000K -r 25 -crf 23 -preset ultrafast -tune zerolatency
+
+@REM Faster codec for video recording. 
+@REM Более быстрый кодек, для записи видео.
+set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -c:v mpeg4 -qscale:v 3 -preset ultrafast -tune zerolatency
 
 @REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -c:v libx264 -b:v 50000K -pix_fmt yuv420p -r 25 -crf 23 -preset ultrafast -tune zerolatency
 
@@ -157,18 +163,23 @@ if errorlevel 1 goto screensound
 @REM Microphone
 @REM ----------------------------------------------------------------------------------------------------------------*
 :microphone
-set m="Microphone sony (VIA HD Audio)"
+set m="Микрофон sony (VIA HD Audio)"
 
-set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
+@REM This video recording codec is a bit heavier. 
+@REM Этот кодек для записи видео немного тяжелее.
+@REM set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
 
+@REM Faster codec for video recording. 
+@REM Более быстрый кодек, для записи видео.
+set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -qscale:a 4 -c:v mpeg4 -qscale:v 3 -preset ultrafast -tune zerolatency
 
 @REM If you want to constrain the area and show the capture area
 @REM Adjust the viewport and switch to 0 this parameter -show_region 1
 @REM When enabled, it freezes!
 @REM ---------------------------------------------------------------------*
-@REM ╨Х╤Б╨╗╨╕ ╨▓╤Л ╤Е╨╛╤В╨╕╤В╨╡ ╨╛╨│╤А╨░╨╜╨╕╤З╨╕╤В╤М ╨╛╨▒╨╗╨░╤Б╤В╤М ╨╕ ╨┐╨╛╨║╨░╨╖╨░╤В╤М ╨╛╨▒╨╗╨░╤Б╤В╤М ╨╖╨░╤Е╨▓╨░╤В╨░
-@REM ╨Э╨░╤Б╤В╤А╨╛╨╣╤В╨╡ ╨╛╨▒╨╗╨░╤Б╤В╤М ╨┐╤А╨╛╤Б╨╝╨╛╤В╤А╨░ ╨╕ ╨┐╨╡╤А╨╡╨║╨╗╤О╤З╨╕╤В╨╡ ╨╜╨░ 0 ╤Н╤В╨╛╤В ╨┐╨░╤А╨░╨╝╨╡╤В╤А -show_region 1
-@REM ╨Я╤А╨╕ ╨▓╨║╨╗╤О╤З╨╡╨╜╨╜╨╛╨╝ ╨┐╨░╤А╨░╨╝╨╡╤В╤А╨╡ ╨╛╨╜ ╨╖╨░╨▓╨╕╤Б╨░╨╡╤В! 
+@REM Если вы хотите ограничить область и показать область захвата
+@REM Настройте область просмотра и переключите на 0 этот параметр -show_region 1
+@REM При включенном параметре он зависает! 
 
 @REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -show_region 1 -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
 
@@ -181,18 +192,24 @@ exit
 @REM Screen sound
 @REM ----------------------------------------------------------------------------------------------------------------*
 :screensound
-set m="Stereo mixer (VIA HD Audio)"
+set m="Стерео микшер (VIA HD Audio)"
 
-set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
+@REM This video recording codec is a bit heavier. 
+@REM Этот кодек для записи видео немного тяжелее.
+@REM set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
+
+@REM Faster codec for video recording. 
+@REM Более быстрый кодек, для записи видео.
+set a=-f gdigrab -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -qscale:a 4 -c:v mpeg4 -qscale:v 3 -preset ultrafast -tune zerolatency
 
 
 @REM If you want to constrain the area and show the capture area
 @REM Adjust the viewport and switch to 0 this parameter -show_region 1
 @REM When enabled, it freezes!
 @REM ---------------------------------------------------------------------*
-@REM ╨Х╤Б╨╗╨╕ ╨▓╤Л ╤Е╨╛╤В╨╕╤В╨╡ ╨╛╨│╤А╨░╨╜╨╕╤З╨╕╤В╤М ╨╛╨▒╨╗╨░╤Б╤В╤М ╨╕ ╨┐╨╛╨║╨░╨╖╨░╤В╤М ╨╛╨▒╨╗╨░╤Б╤В╤М ╨╖╨░╤Е╨▓╨░╤В╨░
-@REM ╨Э╨░╤Б╤В╤А╨╛╨╣╤В╨╡ ╨╛╨▒╨╗╨░╤Б╤В╤М ╨┐╤А╨╛╤Б╨╝╨╛╤В╤А╨░ ╨╕ ╨┐╨╡╤А╨╡╨║╨╗╤О╤З╨╕╤В╨╡ ╨╜╨░ 0 ╤Н╤В╨╛╤В ╨┐╨░╤А╨░╨╝╨╡╤В╤А -show_region 1
-@REM ╨Я╤А╨╕ ╨▓╨║╨╗╤О╤З╨╡╨╜╨╜╨╛╨╝ ╨┐╨░╤А╨░╨╝╨╡╤В╤А╨╡ ╨╛╨╜ ╨╖╨░╨▓╨╕╤Б╨░╨╡╤В! 
+@REM Если вы хотите ограничить область и показать область захвата
+@REM Настройте область просмотра и переключите на 0 этот параметр -show_region 1
+@REM При включенном параметре он зависает! 
 
 @REM set a=-f gdigrab -offset_x 10 -offset_y 20 -video_size 1900x1054 -show_region 1 -framerate 25 -rtbufsize 999999k -thread_queue_size 9999999 -indexmem 9999999 -draw_mouse 1 -i desktop -f dshow -i audio=%m% -b:a 192k -audio_buffer_size 1000 -acodec libmp3lame -c:v libx264 -pix_fmt yuv420p -r 25 -crf 20 -preset ultrafast -tune zerolatency
 
@@ -202,16 +219,16 @@ set c=ffmpeg
 pause
 exit
 
-@REM ╨Я╨╛╨╗╤Г╤З╨╕╤В╤М ╨╕╨╝╤П ╨░╤Г╨┤╨╕╨╛ ╨║╨░╨╜╨░╨╗╨░
+@REM Получить имя аудио канала
 @REM Get audio channel name (Settings)
 @REM ----------------------------------------------------------------------------------------------------------------*
 :audChannelName
-@REM ╨Ю╨┤╨╕╨╜ ╨░╤Г╨┤╨╕╨╛╨║╨░╨╜╨░╨╗ ╨╖╨░╨┐╨╕╤Б╤Л╨▓╨░╨╡╤В ╨╖╨▓╤Г╨║ ╤Б ╨╝╨╕╨║╤А╨╛╤Д╨╛╨╜╨░, ╨┤╤А╤Г╨│╨╛╨╣ ╤Б ╤Н╨║╤А╨░╨╜╨░.
-@REM ╨Ю╨┤╨╜╨╛╨▓╤А╨╡╨╝╨╡╨╜╨╜╨╛ ╨╝╨╛╨╢╨╜╨╛ ╨╖╨░╨┐╨╕╤Б╤Л╨▓╨░╤В╤М ╤В╨╛╨╗╤М╨║╨╛ ╨╛╨┤╨╕╨╜ ╨░╤Г╨┤╨╕╨╛ ╨║╨░╨╜╨░╨╗!!
-@REM ╨Т╨░╨╝ ╨╜╤Г╨╢╨╜╨╛ ╨▒╤Г╨┤╨╡╤В ╤Б╨║╨╛╨┐╨╕╤А╨╛╨▓╨░╤В╤М ╨╕╨╝╤П ╨▓╨░╤И╨╡╨│╨╛ ╨░╤Г╨┤╨╕╨╛ ╨║╨░╨╜╨░╨╗╨░.
-@REM ╨Ш╨╝╤П ╨▒╤Г╨┤╨╡╤В ╨▓ ╤В╨╡╨║╤Б╤В╨╛╨▓╨╛╨╝ ╨▒╨╗╨╛╨║╨╜╨╛╤В╨╡ ╨▓ ╨┐╨░╨┐╨║╨╡ Result.
-@REM ╨Ш ╨▓╤Б╤В╨░╨▓╨╕╤В╤М ╨▓ ╤Н╤В╨╛╤В bat ╤Д╨░╨╣╨╗.
-@REM ╨Ч╨░╨╝╨╡╨╜╨╕╨▓ ╤Н╤В╤Г ╤Б╤В╤А╨╛╨║╤Г "Microphone sony (VIA HD Audio)" ╨╜╨░ ╤Б╨▓╨╛╤О..
+@REM Один аудиоканал записывает звук с микрофона, другой с экрана.
+@REM Одновременно можно записывать только один аудио канал!!
+@REM Вам нужно будет скопировать имя вашего аудио канала.
+@REM Имя будет в текстовом блокноте в папке Result.
+@REM И вставить в этот bat файл.
+@REM Заменив эту строку "Microphone sony (VIA HD Audio)" на свою..
 echo -------------------------------------------------------------------------
 echo.
 echo  One audio channel records sound from the microphone, the other from the screen.
@@ -237,7 +254,7 @@ exit
 
 
 @REM Print the list of supported options in selected device
-@REM ╨а╨░╤Б╨┐╨╡╤З╨░╤В╨░╨╣╤В╨╡ ╤Б╨┐╨╕╤Б╨╛╨║ ╨┐╨╛╨┤╨┤╨╡╤А╨╢╨╕╨▓╨░╨╡╨╝╤Л╤Е ╨╛╨┐╤Ж╨╕╨╣ ╨╜╨░ ╨▓╤Л╨▒╤А╨░╨╜╨╜╨╛╨╝ ╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨╡
+@REM Распечатайте список поддерживаемых опций на выбранном устройстве
 
 @REM @echo off
 @REM color a
