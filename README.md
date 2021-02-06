@@ -1,32 +1,32 @@
 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
 
-# About
 <table>
     <tr>
         <td rowspan="2">
-            <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px">
+            <a href="https://github.com/FFmpeg/FFmpeg">
+                <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="90px" style="margin-top:-50px">
+            </a>
         </td>
         <td>
             <a href="https://ko-fi.com/brendan8c">
-                <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" width="50px">
+                <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" width="300px">
             </a>
         </td>
     </tr>
     <tr>
         <td>
             <a href="https://img.shields.io/github/license/brendan8c/FFMPEG_BAT">
-                <img src="https://img.shields.io/badge/License-MIT-green.svg" width="50px">
+                <img src="https://img.shields.io/badge/License-MIT-green.svg" width="140px">
             </a>
         </td>
     </tr>
 </table>
 
-
 <!-- [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/brendan8c)<br> -->
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://img.shields.io/github/license/brendan8c/FFMPEG_BAT) -->
 
 <!-- Batch script files for FFMPEG (Microsoft Windows and DOS, OS/2).<img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="50px" style="margin-top:-50px"> -->
-
+# About
 It is ready scripts for FFmpeg, YouTube-dl.<br>
 
 # Installation
