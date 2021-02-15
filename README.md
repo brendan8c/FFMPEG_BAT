@@ -339,6 +339,11 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     </tr>
     <tr>
         <td>:sound:</td>
+        <td>MP3 – Trim music</td>
+        <td>Allows you to trim an audio mp3 file.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
         <td>OGG – MP3</td>
         <td>Convert OGG to MP3.</td>
     </tr>
@@ -771,6 +776,11 @@ YouTube-DL WebPage:<br>
         <td>:sound:</td>
         <td>MP3 + PNG = Video</td>
         <td>Преобразуйте mp3 в видео со статическим изображением.</td>
+    </tr>
+    <tr>
+        <td>:sound:</td>
+        <td>MP3 – Trim music</td>
+        <td>Позволяет обрезать аудио mp3 файл.</td>
     </tr>
     <tr>
         <td>:sound:</td>
