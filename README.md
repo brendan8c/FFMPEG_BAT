@@ -94,6 +94,11 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     </tr>
     <tr>
         <td>:red_circle:</td>
+        <td>m3u8 – MP4</td>
+        <td>Download stream m3u8 to mp4.</td>
+    </tr>
+    <tr>
+        <td>:red_circle:</td>
         <td>REС – mp3, mp4, mp3+mp4</td>
         <td>Video recording from the screen mp4 + mp3. MP3 sound recording. Record mp4 video without sound.</td>
     </tr>
@@ -251,6 +256,11 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>:movie_camera:</td>
         <td>MKV – MP4</td>
         <td>Convert MKV video to MP4 video.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – m3u8</td>
+        <td>Convert MOV video to m3u8.</td>
     </tr>
     <tr>
         <td>:movie_camera:</td>
@@ -559,6 +569,11 @@ YouTube-DL WebPage:<br>
     </tr>
     <tr>
         <td>:red_circle:</td>
+        <td>m3u8 – MP4</td>
+        <td>Скачать поток m3u8 в mp4.</td>
+    </tr>
+    <tr>
+        <td>:red_circle:</td>
         <td>REС – mp3, mp4, mp3+mp4</td>
         <td>Запись видео с экрана mp4 + mp3. Запись звука в формате MP3. Записывайте видео в формате mp4 без звука.</td>
     </tr>
@@ -716,6 +731,11 @@ YouTube-DL WebPage:<br>
         <td>:movie_camera:</td>
         <td>MKV – MP4</td>
         <td>Конвертируйте видео MKV в видео MP4.</td>
+    </tr>
+    <tr>
+        <td>:movie_camera:</td>
+        <td>MOV – m3u8</td>
+        <td>Конвертируйте видео MOV в m3u8.</td>
     </tr>
     <tr>
         <td>:movie_camera:</td>
