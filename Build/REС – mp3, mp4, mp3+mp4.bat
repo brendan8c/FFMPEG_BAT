@@ -108,7 +108,7 @@ if errorlevel 1 goto ascreensound
 @REM Microphone
 @REM ----------------------------------------------------------------------------------------------------------------*
 :amicrophone
-set m="Microphone sony (VIA HD Audio)"
+set m="Микрофон (High Definition Audio Device)"
 set a=-f dshow -i audio=%m% -acodec libmp3lame
 set b="Result\audio.mp3"
 set c=ffmpeg
@@ -118,7 +118,7 @@ exit
 @REM Screen sound
 @REM ----------------------------------------------------------------------------------------------------------------*
 :ascreensound
-set m="Stereo mixer (VIA HD Audio)"
+set m="Микрофон (High Definition Audio Device)"
 set a=-f dshow -i audio=%m% -acodec libmp3lame
 set b="Result\audio.mp3"
 set c=ffmpeg
@@ -164,7 +164,7 @@ if errorlevel 1 goto screensound
 @REM Microphone                            
 @REM ----------------------------------------------------------------------------------------------------------------*
 :microphone
-set m="Микрофон sony (VIA HD Audio)"
+set m="Микрофон (High Definition Audio Device)"
 
 @REM This video recording codec is a bit heavier. 
 @REM Этот кодек для записи видео немного тяжелее.
@@ -193,7 +193,7 @@ exit
 @REM Screen sound
 @REM ----------------------------------------------------------------------------------------------------------------*
 :screensound
-set m="Стерео микшер (VIA HD Audio)"
+set m="Микрофон (High Definition Audio Device)"
 
 @REM This video recording codec is a bit heavier. 
 @REM Этот кодек для записи видео немного тяжелее.

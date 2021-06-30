@@ -273,6 +273,16 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>Convert MOV video to AVI video.</td>
     </tr>
     <tr>
+        <td>:movie_camera:</td>
+        <td>WEBM – MP4</td>
+        <td>Convert video WEBM to MP4 video.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – Remove metadata</td>
+        <td>Remove metadata from image.</td>
+    </tr>
+    <tr>
         <td>:volcano:</td>
         <td>JPG – Rename</td>
         <td>Rename all jpg files to one format. file-000.jpg file-001.jpg file-003.jpg</td>
@@ -281,6 +291,11 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>:volcano:</td>
         <td>JPG – MP4</td>
         <td>Make a video from JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG + MP4 = Watermark</td>
+        <td>Overlay MP4 video on JPG image.</td>
     </tr>
     <tr>
         <td>:volcano:</td>
@@ -389,6 +404,11 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     </tr>
     <tr>
         <td>:volcano:</td>
+        <td>PNG – Remove metadata</td>
+        <td>Remove metadata from image</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
         <td>PNG – Rename</td>
         <td>Rename all png files to one format. file-000.png file-png.jpg file-003.png</td>
     </tr>
@@ -396,6 +416,11 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
         <td>:volcano:</td>
         <td>PNG – MP4</td>
         <td>Make a video from PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG + MP4 = Watermark</td>
+        <td>Overlay MP4 video on PNG image.</td>
     </tr>
     <tr>
         <td>:volcano:</td>
@@ -713,6 +738,16 @@ YouTube-DL WebPage:<br>
         <td>Конвертируйте видео MOV в видео AVI.</td>
     </tr>
     <tr>
+        <td>:movie_camera:</td>
+        <td>WEBM – MP4</td>
+        <td>Конвертируйте видео WEBM в MP4 видео.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG – Remove metadata</td>
+        <td>Удалить метаданные из изображения</td>
+    </tr>
+    <tr>
         <td>:volcano:</td>
         <td>JPG – Rename</td>
         <td>Переименуйте все файлы jpg в один формат. file-000.jpg file-001.jpg file-003.jpg</td>
@@ -721,6 +756,11 @@ YouTube-DL WebPage:<br>
         <td>:volcano:</td>
         <td>JPG – MP4</td>
         <td>Сделайте видео из JPG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>JPG + MP4 = Watermark</td>
+        <td>Наложение видео MP4 на изображение JPG.</td>
     </tr>
     <tr>
         <td>:volcano:</td>
@@ -829,6 +869,11 @@ YouTube-DL WebPage:<br>
     </tr>
     <tr>
         <td>:volcano:</td>
+        <td>PNG – Remove metadata</td>
+        <td>Удалить метаданные из изображения</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
         <td>PNG – Rename</td>
         <td>Переименуйте все файлы png в один формат. file-000.png file-png.jpg file-003.png</td>
     </tr>
@@ -836,6 +881,11 @@ YouTube-DL WebPage:<br>
         <td>:volcano:</td>
         <td>PNG – MP4</td>
         <td>Сделайте видео из PNG.</td>
+    </tr>
+    <tr>
+        <td>:volcano:</td>
+        <td>PNG + MP4 = Watermark</td>
+        <td>Наложение видео MP4 на изображение PNG.</td>
     </tr>
     <tr>
         <td>:volcano:</td>
