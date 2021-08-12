@@ -42,12 +42,38 @@
       "editorWarning.foreground": "#fa3200",
       "editorWarning.border": "#fa8e00",
       "editorGutter.background": "#221e1e",
-
       "terminal.background": "#000",
       "terminal.foreground": "#e0e0e0",
       "terminal.selectionBackground": "#4c4e50",
       "terminalCursor.background": "#3d78ca",
       "terminalCursor.foreground": "#ff0000"
     }
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "monaco-split-view2>.sash-container>.monaco-sash": {
+    "pointer-events": "auto",
+    "background-color": "#272727"
+  },
+  "slider": {
+    "background": "rgb(228, 174, 174)"
+  },
+
+  "minimap-slider": {
+    "background": "rgba(228,174,174,0.52)"
+  },
+  "mtk1": {
+    "color": "#f9690e"
+  },
+  "mtk5": {
+    "color": "#f9690e"
+  },
+  "mtk9": {
+    "color": "#7ed07e"
+  },
+  "mtk11": {
+    "color": "#f2ca27"
+  },
+  "mtk13": {
+    "color": "#f9690e"
   }
 }
