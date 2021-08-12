@@ -49,6 +49,9 @@
       "terminalCursor.foreground": "#ff0000"
     }
   },
+  "editor.fontFamily": "'iosevka', Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
   "workbench.colorTheme": "Default Dark+",
   "monaco-split-view2>.sash-container>.monaco-sash": {
     "pointer-events": "auto",
