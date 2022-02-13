@@ -28,7 +28,7 @@
 </table>
 
 <details>
-    <summary>-------------------------------------------------:us: :us: :us: ENGLISH :us: :us: :us:-------------------------------------------------</summary>
+    <summary>---------------------------------------------:us: :us: :us: ENGLISH :us: :us: :us:---------------------------------------------</summary>
     <br />
 <details>
     <summary>About :mag_right:</summary>
@@ -503,7 +503,7 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
 </details>
 
 <details>
-    <summary>-------------------------------------------------:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:-------------------------------------------------</summary>
+    <summary>---------------------------------------------:ru: :ru: :ru: RUSSIAN :ru: :ru: :ru:---------------------------------------------</summary>
     <br />
 <details>
     <summary>About :mag_right:</summary>
