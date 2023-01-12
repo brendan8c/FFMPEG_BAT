@@ -25,6 +25,6 @@ color a
 set a="Your_files\*.mp4"
 set b="Result\%%~na.gif"
 set c=ffmpeg
-set f=-filter_complex "[0:v] fps=10,scale=-1:-1:flags=full_chroma_int,split [a][b];[a] palettegen=max_colors=255:reserve_transparent=1:stats_mode=diff [p];[b][p] paletteuse=dither=none:bayer_scale=5:diff_mode=rectangle:new=1:alpha_threshold=128" -gifflags -offsetting
+set f=-filter_complex "[0:v] fps=30,scale=-1:-1:flags=full_chroma_int,split [a][b];[a] palettegen=max_colors=255:reserve_transparent=1:stats_mode=diff [p];[b][p] paletteuse=dither=none:bayer_scale=5:diff_mode=rectangle:new=1:alpha_threshold=128" -gifflags -offsetting
 for %%a in (%a%) do (%c% -y -i "%%a" %f% %b%)
 exit
