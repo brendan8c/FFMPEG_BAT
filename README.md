@@ -56,7 +56,7 @@ There are 2 folders: Your_files and Result<br>
 FFMPEG WebPage:<br>
 > https://ffmpeg.org<br>
 > https://github.com/FFmpeg/FFmpeg<br>
-To update, download with this name: ffmpeg-N-******-ga423bc9dc2-win64-gpl.zip<br>
+To update, download with this name: ffmpeg-master-latest-win64-gpl.zip<br>
 > https://github.com/BtbN/FFmpeg-Builds/releases<br>
 
 ## YouTube-DL About
