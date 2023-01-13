@@ -516,7 +516,7 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
 Откройте консоль и клонируйте этот репозиторий.<br>
 `git clone https://github.com/brendan8c/FFmpeg_bat.git`
 
-# Как пользоваться:
+# Способ применения:
 ## FFmpeg<br>
 Есть 2 папки: Your_files и Result<br>
 1) Перетащите файлы (файл) в папку Your_files<br>
@@ -531,7 +531,7 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
 FFMPEG WebPage:<br>
 > https://ffmpeg.org<br>
 > https://github.com/FFmpeg/FFmpeg<br>
-Чтобы обновить, скачайте с этим именем: ffmpeg-N-******-ga423bc9dc2-win64-gpl.zip<br>
+Чтобы обновить, скачайте с этим именем: ffmpeg-master-latest-win64-gpl.zip<br>
 > https://github.com/BtbN/FFmpeg-Builds/releases<br>
 
 ## YouTube-DL About
