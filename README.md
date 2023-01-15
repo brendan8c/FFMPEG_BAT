@@ -1,7 +1,7 @@
 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.png width="100%">
 
 <table align="center">
-    <tr>
+    <!-- <tr>
         <td rowspan="2">
             <a href="https://github.com/FFmpeg/FFmpeg">
                 <img src=https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/FFmpeg.svg width="70px" style="margin-top:-50px">
@@ -12,13 +12,13 @@
                 <img src="https://www.ko-fi.com/img/githubbutton_sm.svg" width="226px">
             </a>
         </td>
-    </tr>
+    </tr> -->
     <tr>
-        <td>
+        <!-- <td>
             <a href="https://www.paypal.com/paypalme/artemguskov/5usd">
                 <img src="https://raw.githubusercontent.com/Brendan8c/FFMPEG_BAT/master/img/PayPal.svg" width="100px">
             </a>
-        </td>
+        </td> -->
         <td>
             <a href="https://img.shields.io/github/license/brendan8c/FFMPEG_BAT">
                 <img src="https://img.shields.io/badge/License-MIT-green.svg" width="100px">
@@ -35,42 +35,51 @@
 <br>
 
 # About
+
 It is ready scripts for FFmpeg, YouTube-dl.<br>
 
 # Installation
+
 Open your console and clone this repository.<br>
 `git clone https://github.com/brendan8c/FFmpeg_bat.git`
 
 # How to use:
+
 ## Ffmpeg<br>
+
 There are 2 folders: Your_files and Result<br>
-1) Drag and drop your files (file) to Your_files folder<br>
-2) Select the desired .bat file for conversion<br>
-3) Take the finished files from the Result folder<br>
+
+1. Drag and drop your files (file) to Your_files folder<br>
+2. Select the desired .bat file for conversion<br>
+3. Take the finished files from the Result folder<br>
 
 ## Youtube-dl<br>
-1) Run the .bat file and paste the url link to the video<br>
-2) Take the downloaded file from the Result folder<br>
+
+1. Run the .bat file and paste the url link to the video<br>
+2. Take the downloaded file from the Result folder<br>
 
 ## FFMPEG About
+
 FFMPEG WebPage:<br>
-> https://ffmpeg.org<br>
-> https://github.com/FFmpeg/FFmpeg<br>
-To update, download with this name: ffmpeg-master-latest-win64-gpl.zip<br>
-> https://github.com/BtbN/FFmpeg-Builds/releases<br>
+
+> https://ffmpeg.org<br> > https://github.com/FFmpeg/FFmpeg<br>
+> To update, download with this name: ffmpeg-master-latest-win64-gpl.zip<br> > https://github.com/BtbN/FFmpeg-Builds/releases<br>
 
 ## YouTube-DL About
+
 YouTube-DL WebPage:<br>
-> https://yt-dl.org<br>
-> https://github.com/ytdl-org/youtube-dl<br>
+
+> https://yt-dl.org<br> > https://github.com/ytdl-org/youtube-dl<br>
 
 ## PNG format
+
 I use the png format in my scripts, it keeps the best quality of the cortinka than jpg.<br>
 If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 
 </details>
 
 # FFMPEG
+
 ## Available Conversion Modes
 
 <table>
@@ -495,10 +504,12 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
 <br>
 
 ## Note
+
 I left more detailed instructions in some .bat files.<br>
 Any .bat file can be opened in a text editor.<br>
 Some .bat files are saved in "chcp 866" encoding!<br>
 If there are "hieroglyphs" for the place of the code, change the encoding in your code editor to "chcp 866".<br>
+
 </details>
 </details>
 
@@ -510,42 +521,51 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
 <br>
 
 # About
+
 Это готовые скрипты для FFmpeg, YouTube-dl.<br>
 
 # Установка
+
 Откройте консоль и клонируйте этот репозиторий.<br>
 `git clone https://github.com/brendan8c/FFmpeg_bat.git`
 
 # Способ применения:
+
 ## FFmpeg<br>
+
 Есть 2 папки: Your_files и Result<br>
-1) Перетащите файлы (файл) в папку Your_files<br>
-2) Выберите желаемый .bat файл для конвертации<br>
-3) Возьмите готовые файлы из папки Result<br>
+
+1. Перетащите файлы (файл) в папку Your_files<br>
+2. Выберите желаемый .bat файл для конвертации<br>
+3. Возьмите готовые файлы из папки Result<br>
 
 ## Youtube-dl<br>
-1) Запустите .bat файл и вставьте ссылку на видео<br>
-2) Возьмите скачанный файл из папки Result <br>
+
+1. Запустите .bat файл и вставьте ссылку на видео<br>
+2. Возьмите скачанный файл из папки Result <br>
 
 ## FFMPEG About
+
 FFMPEG WebPage:<br>
-> https://ffmpeg.org<br>
-> https://github.com/FFmpeg/FFmpeg<br>
-Чтобы обновить, скачайте с этим именем: ffmpeg-master-latest-win64-gpl.zip<br>
-> https://github.com/BtbN/FFmpeg-Builds/releases<br>
+
+> https://ffmpeg.org<br> > https://github.com/FFmpeg/FFmpeg<br>
+> Чтобы обновить, скачайте с этим именем: ffmpeg-master-latest-win64-gpl.zip<br> > https://github.com/BtbN/FFmpeg-Builds/releases<br>
 
 ## YouTube-DL About
+
 YouTube-DL WebPage:<br>
-> https://yt-dl.org<br>
-> https://github.com/ytdl-org/youtube-dl<br>
+
+> https://yt-dl.org<br> > https://github.com/ytdl-org/youtube-dl<br>
 
 ## PNG формат
+
 Я использую в своих скриптах формат png, он сохраняет лучшее качество кортинки, чем jpg.<br>
 При желании можно использовать файлы .bat и jpg, я их также подготовил.<br>
 
 </details>
 
 # FFMPEG
+
 ## Доступные режимы преобразования
 
 <table>
@@ -970,9 +990,11 @@ YouTube-DL WebPage:<br>
 <br>
 
 ## Заметка
+
 Я оставил более подробные инструкции в некоторых .bat файлах.<br>
 Любой .bat файл можно открыть в текстовом редакторе.<br>
 Некоторые .bat файлы сохранены в кодировке "chcp 866"!<br>
 Если будут "иероглифы" за место кода, смените кодировку у вашего редактора кода на "chcp 866".<br>
+
 </details>
 </details>
