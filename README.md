@@ -34,10 +34,6 @@
     <summary>About :mag_right:</summary>
 <br>
 
-# About
-
-It is ready scripts for FFmpeg, YouTube-dl.<br>
-
 # Installation
 
 Open your console and clone this repository.<br>
@@ -53,23 +49,12 @@ There are 2 folders: Your_files and Result<br>
 2. Select the desired .bat file for conversion<br>
 3. Take the finished files from the Result folder<br>
 
-## Youtube-dl<br>
-
-1. Run the .bat file and paste the url link to the video<br>
-2. Take the downloaded file from the Result folder<br>
-
 ## FFMPEG About
 
 FFMPEG WebPage:<br>
 
 > https://ffmpeg.org<br> > https://github.com/FFmpeg/FFmpeg<br>
 > To update, download with this name: ffmpeg-master-latest-win64-gpl.zip<br> > https://github.com/BtbN/FFmpeg-Builds/releases<br>
-
-## YouTube-DL About
-
-YouTube-DL WebPage:<br>
-
-> https://yt-dl.org<br> > https://github.com/ytdl-org/youtube-dl<br>
 
 ## PNG format
 
@@ -473,32 +458,6 @@ If you want, you can use .bat files with jpg too, I prepared them as well.<br>
     </tr>
 </table>
 <br>
-<table>
-    <tr>
-        <td colspan="3" align="center">YouTube-DL</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Classic</td>
-        <td>Downloads videos with maximum quality.</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Advanced</td>
-        <td>The user can select the desired video and audio formats.</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Audio</td>
-        <td>Download only audio .mp3 or whole playlist.</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Update</td>
-        <td>Updates your current youtube-dl.exe if an update is available.</td>
-    </tr>
-</table>
-<br>
 <details>
     <summary>Note :mag_right:</summary>
 <br>
@@ -520,10 +479,6 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
     <summary>About :mag_right:</summary>
 <br>
 
-# About
-
-Это готовые скрипты для FFmpeg, YouTube-dl.<br>
-
 # Установка
 
 Откройте консоль и клонируйте этот репозиторий.<br>
@@ -539,23 +494,12 @@ If there are "hieroglyphs" for the place of the code, change the encoding in you
 2. Выберите желаемый .bat файл для конвертации<br>
 3. Возьмите готовые файлы из папки Result<br>
 
-## Youtube-dl<br>
-
-1. Запустите .bat файл и вставьте ссылку на видео<br>
-2. Возьмите скачанный файл из папки Result <br>
-
 ## FFMPEG About
 
 FFMPEG WebPage:<br>
 
 > https://ffmpeg.org<br> > https://github.com/FFmpeg/FFmpeg<br>
 > Чтобы обновить, скачайте с этим именем: ffmpeg-master-latest-win64-gpl.zip<br> > https://github.com/BtbN/FFmpeg-Builds/releases<br>
-
-## YouTube-DL About
-
-YouTube-DL WebPage:<br>
-
-> https://yt-dl.org<br> > https://github.com/ytdl-org/youtube-dl<br>
 
 ## PNG формат
 
@@ -956,32 +900,6 @@ YouTube-DL WebPage:<br>
         <td></td>
         <td></td>
         <td></td>
-    </tr>
-</table>
-<br>
-<table>
-    <tr>
-        <td colspan="3" align="center">YouTube-DL</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Classic</td>
-        <td>Скачивает видео в максимальном качестве.</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Advanced</td>
-        <td>Пользователь может выбрать желаемые видео и аудио форматы.</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Audio</td>
-        <td>Скачивайте только аудио в формате .mp3 или весь плейлист.</td>
-    </tr>
-    <tr>
-        <td>:space_invader:</td>
-        <td>Youtube – Update</td>
-        <td>Обновляет текущий файл youtube-dl.exe, если доступно обновление.</td>
     </tr>
 </table>
 <br>
